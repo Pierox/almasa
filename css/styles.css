@@ -1,0 +1,414 @@
+
+:root{
+  --azul: #0055a2; 
+  --celeste: #5b96cb;
+  --grisClaro: #d1d3d3; 
+  --gris: #7c7c7b;
+  --blanco: #FFFFFF;
+}
+@font-face {
+    font-family: 'saira-extrabold';
+    src: url('../fonts/Saira-ExtraBold.ttf')  format('truetype');
+}
+@font-face {
+    font-family: 'saira-bold';
+    src: url('../fonts/Saira-Bold.ttf')  format('truetype');
+}
+@font-face {
+    font-family: 'saira-semibold';
+    src: url('../fonts/Saira-SemiBold.ttf')  format('truetype');
+}
+@font-face {
+    font-family: 'saira-medium';
+    src: url('../fonts/Saira-Medium.ttf')  format('truetype');
+}
+@font-face {
+    font-family: 'saira-regular';
+    src: url('../fonts/Saira-Regular.ttf')  format('truetype');
+}
+
+ul, ul li{
+    list-style: none;
+    margin: 0;
+}
+a{
+    font-style: normal;
+    text-decoration: none;
+    font-family: 'saira-regular';
+    outline: none;
+}
+body.home header{
+    position: absolute;
+    z-index: 2;
+}
+header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+header, header a{
+    font-size: 18px;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'saira-regular';
+}
+header nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 30px;
+    margin-right: 28px;
+}
+header ul{
+    display: flex;
+    padding: 0;
+    justify-content: flex-end;
+}
+header ul li{
+    position: relative;
+}
+header ul li .hoverlink{
+    width: 158px;
+    text-align: center;
+    position: relative;
+}
+header ul li:hover .hoverlink:before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    transform: skew(-15deg);
+    background: var(--azul);
+    position: absolute;
+    color: #FFFFFF;
+    line-height: 0;
+    left: 0;
+}
+header ul li a{
+    position: relative;
+    display: block;
+    padding: 13px 0;
+    z-index: 2;
+}
+header ul:last-child{
+    border-top: 1px solid #FFFFFF;
+}
+header .arrowDown{
+    margin-left: 8px;
+}
+header ul.submenu{
+    display: none;
+    position: absolute;
+    left: -75px;
+    width: 333px;
+    transform: skew(-15deg);
+    border-top: none;
+}
+header ul.submenu a{
+    color: var(--gris) !important;
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-transform: initial;
+    transform: skew(15deg);
+}
+header ul.submenu li{
+    border-bottom: 1px solid var(--grisClaro);
+}
+header ul.submenu li:last-child{
+    border-bottom: none;
+}
+header ul.submenu li{
+    background-color: var(--blanco);
+}
+header ul.submenu li:hover{
+    background-color: var(--azul);
+}
+header ul.submenu li:hover a{
+    color: var(--blanco) !important;
+}
+header .liNav:hover .submenu{
+    display: block;
+}
+
+.fontMedium{
+    font-family: 'saira-medium';
+}
+
+.full-container{
+    max-width: 1800px;
+    width: 100%;
+    margin: 0 auto;
+}
+.sub-fullcontainer{
+    width: calc(100% - 55px);
+    margin: 0 auto;
+}
+.container-1300{
+    max-width: 1300px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+}
+
+/***********************/
+/***********************/
+.sectionMedia{
+    background-image: url('../img/media/marcaAgua.png');
+    background-repeat: no-repeat;
+}
+.sectionMedia p{
+    font-size: 33px;
+    line-height: 1;
+    color: var(--gris);
+    font-family: 'saira-regular';
+}
+.sectionMedia .subtitle{
+    font-size: 33px;
+    margin: 0;
+    font-family: 'saira-semibold';
+    text-transform: uppercase;
+}
+.sectionMedia .subtitle.plus{
+    font-family: 'saira-bold';
+    background-color: var(--azul);
+    transform: skew(-15deg);
+    color: var(--blanco);
+    font-size: 38px;
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.sectionMedia .subtitle.plus span{
+    padding: 0 5px;
+    transform: skew(15deg);
+    display: block;
+}
+.contMedia{
+    display: flex;
+}
+.sectionMedia .divTextoMedia{
+    display: flex;
+    align-items: center;
+}
+.sectionMedia .divTextoMedia > div{
+    width: calc(100% - 160px);
+    margin: 0 auto;
+    padding: 40px 0;
+}
+.sectionMedia .divVideoMedia img{
+    position: relative;
+    top: -50px;
+    z-index: 1;
+}
+.sectionMedia .divVideoMedia > a{
+    margin-top: -40px;
+}
+
+/**********************/
+/**********************/
+
+.columnFooter{
+    width: 50%;
+}
+
+.titleSection{
+    font-family: 'saira-extrabold';
+    color: var(--azul);
+    font-size: 66px;
+    display: table;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 80px;
+    margin-top: 38px;
+}
+.titleDiv{
+    font-family: 'saira-bold';
+    color: var(--azul);
+    font-size: 34px;
+}
+.subtitle{
+    font-family: 'saira-bold';
+    color: var(--azul);
+    font-size: 25px;
+    line-height: 1.5;
+}
+.divWhy{
+    display: flex;
+}
+.divWhy div:first-child{
+    width: 150px;
+}
+
+.divWhy p{
+    font-family: 'saira-regular';
+    color: var(--gris);
+    font-size: 30px;
+}
+.titleSection::before{
+    content: '';
+    background-image: url('../img/logito.png');
+    display: block;
+    width: 48px;
+    height: 72px;
+    position: absolute;
+    top: 0;
+    left: -22px;
+    z-index: -1;
+}
+
+
+.contfullblue{
+    width: 100%;
+    background-color: var(--azul);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+.contfullblue span:first-child,
+.contfullblue span:last-child{
+    display: block;
+    text-align: center;
+}
+.contfullblue span{
+    font-family: 'saira-medium';
+    font-size: 23px;
+}
+.contfullblue span.boldDatos{
+    font-family: 'saira-bold';
+    font-size: 45px;
+    display: flex
+}
+.contfullblue .boldDatos span{
+    font-size: 24px;
+}
+.contfullblue .divDatos{
+    padding: 0 28px;
+    border-right: 3px solid var(--celeste);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+.contfullblue .divDatos:last-child{
+    border-right: none;
+}
+.containerCuadritosServicios{
+    display: flex;
+    flex-wrap: wrap;
+}
+.servicioImg{
+    width: 100%;
+    display: block;
+}
+.cuadritoServicios{
+    width: 20%;
+    position: relative;
+}
+.cuadritoCeleste{
+    content: '';
+    position: absolute;
+    width: calc(100% - 66px);
+    height: calc(100% - 66px);
+    background-color: rgba(91,150,203,0.25);
+    top: 0;
+    left: 0;
+    transition: background-color 0.5s ease;
+    color: #FFFFFF;
+    padding: 33px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+.cuadritoCeleste span{
+    font-size: 33px;
+    font-family: 'saira-medium';
+}
+.cuadritoCeleste div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    line-height: 1;
+}
+.cuadritoCeleste div img{
+    position: relative;
+    top: 3px;
+}
+.cuadritoCeleste > img,
+.cuadritoCeleste > div{
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.cuadritoServicios:hover .cuadritoCeleste{
+    background-color: rgba(0,64,161,0.8);
+}
+.cuadritoServicios:hover .cuadritoCeleste > img,
+.cuadritoServicios:hover .cuadritoCeleste > div{
+    opacity: 1;
+}
+.container-1634{
+    max-width: 1634px;
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.container-1634 .divWhy{
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    width: calc(50% - 121px);
+}
+.container-1634.greyline .divWhy{
+    border-bottom: 2px solid var(--grisClaro);
+}
+.container-1634.greyline .divWhy:nth-child(2n){
+    border-left: 2px solid var(--grisClaro);
+}
+.container-1634.solo .divWhy{
+    margin: 0 auto;
+}
+.sectionDatos{
+    margin-bottom: 40px;
+}
+footer{
+    background-color: var(--azul);
+    color: #FFFFFF;
+    padding-bottom: 20px;
+}
+footer .container-1300 .columnFooter:first-child img,
+footer .container-1300 .columnFooter:first-child div{
+    padding-left: 90px;
+}
+footer a{
+    color: #FFFFFF;
+    font-size: 33px;
+    line-height: 52px;
+}
+.columnFooter{
+    padding-top: 60px;
+}
+footer ul.navFooter{
+    display: flex;
+    flex-wrap: wrap;
+}
+footer ul.navFooter li{
+    width: calc(50% - 42px);
+    padding-left: 42px;
+}
+footer .listRedes{
+    display: flex;
+    float: right;
+    padding-right: 53px;
+}
+footer .listRedes li{
+    padding: 0 20px;
+}
+footer .listRedes img{
+    width: 36px;
+}

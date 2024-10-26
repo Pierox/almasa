@@ -1,0 +1,154 @@
+/**********************/
+/**********************/
+.bannerHome{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #000000;
+    overflow: hidden;
+}
+.bannerHome img{
+    position: absolute;
+    max-height: 100vh;
+    height: 100%;
+    left: 50%;
+    /* margin-left: 50%; */
+    transform: translate(-50%);
+}
+.paralelogramDivBanner{
+    position: absolute;
+    z-index: 1;
+    text-transform: uppercase;
+    top: 65%;
+    left: 23%;
+    transform: translate(-50%,-50%);
+
+}
+.paralelogramDivBanner > div{
+    position: relative;
+    padding: 44px 60px;
+    z-index: 1;
+}
+
+.paralelogramDivBanner .minurText{
+    font-family: 'saira-medium';
+    font-size: 36px;
+    color: #FFFFFF;
+    margin: 0;
+    line-height: 1;
+}
+.paralelogramDivBanner .mayorText{
+    font-family: 'saira-bold';
+    font-size: 50px;
+    width: 512px;
+    color: #FFFFFF;
+    margin: 0;
+    line-height: 1;
+}
+
+.paralelogramDivBanner::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    transform: skew(-15deg);
+    background: var(--azul);
+    position: absolute;
+    color: #FFFFFF;
+    line-height: 0;
+  }
+
+/*************************/
+/**marca de agua de logo**/
+/*************************/
+
+.bannerHome::before{
+    content: '';
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    background: rgb(0,0,0);
+background: linear-gradient(0deg, rgba(0,0,0,0.5029586834733894) 0%, rgba(120,120,120,0.43012955182072825) 51%, rgba(255,255,255,0) 100%);
+    z-index: 1;
+}
+.bannerHome::after{
+    content: '';
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    background: rgb(255,255,255);
+background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(120,120,120,0.48503151260504207) 46%, rgba(0,0,0,0.42620798319327735) 100%);
+    z-index: 1;
+}
+.containerBannerHome .cont-marcaAgua{
+    position: relative;
+    display: contents;
+}
+.containerBannerHome .cont-marcaAgua::before{
+    content: '';
+    position: absolute;
+    background-image: url(../img/banner/marcaAguaIzq.png);
+    left: 0;
+    bottom: 0;
+    width: 262px;
+    height: 405px;
+    z-index: 1;
+}
+.containerBannerHome .cont-marcaAgua::after{
+    content: '';
+    position: absolute;
+    background-image: url(../img/banner/marcaAguaDer.png);
+    right: 0;
+    bottom: 0;
+    width: 523px;
+    height: 790px;
+    z-index: 1;
+}
+
+/*********************/
+/*botones del banner */
+/*********************/
+.paralelogramDivBanner a.buttonBanner{
+    font-size: 20px;
+    font-family: 'saira-regular';
+    text-decoration: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 150px;
+    color: #FFFFFF;
+}
+
+.paralelogramDivBanner a.buttonBanner::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    transform: skew(-15deg);
+    background: var(--azul);
+    border: 2px solid #FFFFFF;
+    position: absolute;
+    color: #FFFFFF;
+    line-height: 0;
+}
+.paralelogramDivBanner .contButtons{
+    display: flex;
+    margin-top: 38px;
+    justify-content: flex-end;
+}
+.paralelogramDivBanner a.buttonBanner span{
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    padding: 5px 0;
+}
+.paralelogramDivBanner a.buttonBanner:last-child{
+    margin-left: 18px;
+    color: var(--azul);
+}
+.paralelogramDivBanner a.buttonBanner:last-child:before{
+    background: #FFFFFF;
+}
