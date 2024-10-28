@@ -1,16 +1,22 @@
+$(document).ready(function(){
+  $('select').formSelect();
+});
+$(document).ready(function(){
+  $('.modal').modal();
+});
 // Scroll suave al cargar el DOM
 document.addEventListener('DOMContentLoaded', function () {
   const scrollToBtn = document.querySelector('.arrowDownSection');
   const scrollToEl = document.getElementById('whySection');
 
-  if (scrollToBtn && scrollToEl) { // Verifica que los elementos existen
+  if (scrollToBtn && scrollToEl) { 
     scrollToBtn.addEventListener('click', function (e) {
-      e.preventDefault(); // Evita el comportamiento predeterminado del clic
+      e.preventDefault(); 
 
-      // Realiza el desplazamiento suave
+
       window.scrollTo({
         top: scrollToEl.offsetTop,
-        behavior: 'smooth' // Desplazamiento suave
+        behavior: 'smooth' 
       });
     });
   }
@@ -20,20 +26,18 @@ document.addEventListener('DOMContentLoaded', function () {
 /*********BANNER*********/
 /************************/
 $(document).ready(function () {
-  const tiempoDeCarga = 3000; // Duración del ciclo (banner + barra)
+  const tiempoDeCarga = 3000; 
 
   function barraCargaBanner() {
     const barrita = $(".barraLoad");
 
-    // Reinicia la barra y anima hasta el 100%
     barrita.stop().css("width", "0%").animate(
       { width: '100%' },
       tiempoDeCarga,
-      'linear' // Animación suave y uniforme
+      'linear' 
     );
   }
 
-  // Inicializa Slick Slider
   $('.bannerSlick').slick({
     slidesToShow: 1,
     dots: false,
@@ -43,20 +47,33 @@ $(document).ready(function () {
     cssEase: 'linear',
     autoplay: true,
     autoplaySpeed: tiempoDeCarga,
-    pauseOnHover: false,  // Evita que el autoplay se detenga al pasar el mouse
-    pauseOnFocus: false,  // Evita que el autoplay se detenga al hacer clic
+    pauseOnHover: false, 
+    pauseOnFocus: false, 
   });
 
-  // Reinicia la barra después de cada cambio de slide
   $('.bannerSlick').on('afterChange', function () {
     barraCargaBanner(); 
   });
 
-  // Ejecuta la barra al inicio
   barraCargaBanner();
 
-  // Asegura que el autoplay se reinicie después de un clic en el slider
   $('.bannerSlick').on('click', function () {
-    $(this).slick('slickPlay'); // Reinicia el autoplay
+    $(this).slick('slickPlay'); 
   });
 });
+
+
+/************************/
+/*******CLIENTES*********/
+/************************/
+
+
+$('.carouselClientes').slick({
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  arrows: false,
+  dots: true,
+  autoplay: true,
+  autoplaySpeed: 4000,
+});
+

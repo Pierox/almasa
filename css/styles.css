@@ -3,6 +3,7 @@
   --azul: #0055a2; 
   --celeste: #5b96cb;
   --grisClaro: #d1d3d3; 
+  --grisMasClaro: #fafafa; 
   --gris: #7c7c7b;
   --blanco: #FFFFFF;
 }
@@ -222,7 +223,19 @@ header .liNav:hover .submenu{
 }
 /**********************/
 /**********************/
-
+.carouselClientes{
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+}
+.carouselClientes > div img{
+    display: block;
+    margin: 0 auto;
+}
+.carouselClientes > div{
+    padding-bottom: 100px;
+    padding-top: 25px;
+}
 .columnFooter{
     width: 50%;
 }
@@ -234,8 +247,9 @@ header .liNav:hover .submenu{
     display: table;
     margin: 0 auto;
     position: relative;
-    margin-bottom: 80px;
+    padding-bottom: 80px;
     padding-top: 38px;
+    z-index: 2;
 }
 .titleDiv{
     font-family: 'saira-bold';
@@ -260,7 +274,7 @@ header .liNav:hover .submenu{
     color: var(--gris);
     font-size: 30px;
 }
-.titleSection::before{
+.titleSection::after{
     content: '';
     background-image: url('../img/logito.png');
     display: block;
@@ -391,6 +405,42 @@ header .liNav:hover .submenu{
 .sectionDatos{
     margin-bottom: 40px;
 }
+
+
+
+/*****************/
+/*****************/
+
+.sectionForm{
+    background-color: var(--grisMasClaro);
+    margin-top: 100px;
+}
+.sectionForm textarea{
+    min-height: 188px;
+}
+.sectionForm form{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto !important;
+    float: none !important;
+}
+.sectionForm > .row{
+    margin-bottom: 0px;
+}
+/*****************/
+/*****************/
+
+.ubicanos{
+    width: 1800px;
+    height: 499px;
+    background: url('../img/map.png') no-repeat;
+}
+
+/*****************/
+/*****************/
+
+
+
 footer{
     background-color: var(--azul);
     color: #FFFFFF;

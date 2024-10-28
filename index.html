@@ -7,6 +7,7 @@
     <title>Document</title>
     
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="materialize/css/materialize.css">
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link rel="stylesheet" href="css/styles.css">
@@ -205,9 +206,12 @@
                     </div>
                 </div>
                 <div class="divVideoMedia">
-                    <a href="#">
+                    <a href="#modal1" class="modal-trigger">
                         <img src="img/media/videoHome.png" alt="video home">
                     </a>
+                    <div id="modal1" class="modal" style="background: transparent;">
+                        <iframe width="100%" height="400" src="https://www.youtube.com/embed/q-n2xdcURoI?si=bWvrhVkIoS3jqSL3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                      </div>
                 </div>
             </div>
         </section>
@@ -442,6 +446,114 @@
 
         <section>
             <h2 class="titleSection">Algunos clientes</h2>
+            <div class="carouselClientes">
+                <div>
+                    <img src="img/temp/clientes/interbank.png" alt="">
+                </div>
+                <div>
+                    <img src="img/temp/clientes/los-portales.png" alt="">
+                </div>
+                <div>
+                    <img src="img/temp/clientes/grupo-centenario.png" alt="">
+                </div>
+                <div>
+                    <img src="img/temp/clientes/lima-airport.png" alt="">
+                </div>
+                <div>
+                    <img src="img/temp/clientes/interbank.png" alt="">
+                </div>
+                <div>
+                    <img src="img/temp/clientes/los-portales.png" alt="">
+                </div>
+                <div>
+                    <img src="img/temp/clientes/grupo-centenario.png" alt="">
+                </div>
+                <div>
+                    <img src="img/temp/clientes/lima-airport.png" alt="">
+                </div>
+                <div>
+                    <img src="img/temp/clientes/interbank.png" alt="">
+                </div>
+                <div>
+                    <img src="img/temp/clientes/los-portales.png" alt="">
+                </div>
+                <div>
+                    <img src="img/temp/clientes/grupo-centenario.png" alt="">
+                </div>
+                <div>
+                    <img src="img/temp/clientes/lima-airport.png" alt="">
+                </div>
+                <div>
+                    <img src="img/temp/clientes/interbank.png" alt="">
+                </div>
+                <div>
+                    <img src="img/temp/clientes/los-portales.png" alt="">
+                </div>
+                <div>
+                    <img src="img/temp/clientes/grupo-centenario.png" alt="">
+                </div>
+                <div>
+                    <img src="img/temp/clientes/lima-airport.png" alt="">
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="sectionForm">
+            <h2 class="titleSection">Contáctanos</h2>
+            <div class="row">
+                <form class="col s12">
+                  <div class="row">
+                    <div class="input-field col s3">
+                      <input id="nombre" type="text" class="validate">
+                      <label for="nombre">Nombre</label>
+                    </div>
+                    <div class="input-field col s3">
+                      <input id="apellido" type="text" class="validate">
+                      <label for="apellido">Apellido</label>
+                    </div>
+                    <div class="input-field col s6">
+                      <input id="empresa" type="text" class="validate">
+                      <label for="last_name">Empresa</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s6">
+                        <input id="email" type="email" class="validate">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="cargo" type="text" class="validate">
+                        <label for="cargo">Cargo</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s6">
+                      <input id="telefono" type="text" class="validate">
+                      <label for="telefono">Teléfono</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <select>
+                            <option value="" disabled selected>Servicio de interés</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                          </select>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s12">
+                        <textarea id="textarea1" class="materialize-textarea"></textarea>
+               
+                    </div>
+                  </div>
+                 
+                </form>
+              </div>
+        </section>
+
+        <section class="ubicanos">
+
         </section>
     </main>
 
@@ -518,6 +630,7 @@
     </footer>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="materialize/js/materialize.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="js/home.js"></script>
 </body>
