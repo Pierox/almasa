@@ -272,6 +272,24 @@ header .liNav:hover .submenu{
 .sectionMedia.servicios .divTextoMedia .contButtons a span{
     text-align: center;
 }
+.sectionMedia.servicios .contMedia{
+    justify-content: space-between;
+}
+.videomodal{
+    position: relative;
+}
+.videomodal::after{
+    content: '';
+    width: 172px;
+    height: 172px;
+    position: absolute;
+    top: 50%;
+    margin-top: -86px;
+    left: 50%;
+    margin-left: -86px;
+    background-image: url('../img/media/icon-video-play.png');
+    z-index: 3;
+}
 /********************/
 /********************/
 .slider-sectionpage .slider-container {
@@ -313,7 +331,7 @@ header .liNav:hover .submenu{
 .slider-sectionpage .slider-nav{
     position: relative;
     margin-top: -119px;
-    top: -30px;
+    top: -74px;
 }
 .slider-sectionpage .slider-nav .slick-track{
     border: 7px solid var(--blanco);
@@ -350,6 +368,19 @@ header .liNav:hover .submenu{
 }
 .sectionMedia.servicios .divTextoMedia ul li::marker{
     color: var(--azul);
+    list-style-image: url(../img/listGreen.png);
+    
+}
+
+.sectionMedia.servicios .divTextoMedia ul.greenLi{
+    list-style-image: url(../img/listGreen.png);
+    min-width: 720px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.sectionMedia.servicios .divTextoMedia ul.greenLi li{
+    list-style: none;
+    list-style-image: url(../img/listGreen.png);
 }
 .sectionMedia.servicios .subtitle.subtitlegreen::before{
     content: '';

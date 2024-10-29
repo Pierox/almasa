@@ -1,3 +1,6 @@
+$(document).ready(function(){
+    $('.modal').modal();
+  });
 $(document).ready(function() {
     // Inicializar slider principal
     $('.slider-for').slick({
@@ -52,4 +55,20 @@ $(document).ready(function(){
         });
     }
   });
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const scrollToBtn = document.querySelector('.arrowDownSection');
+    const scrollToEl = document.querySelector('.containerCuadritosServicios');
   
+    if (scrollToBtn && scrollToEl) { 
+      scrollToBtn.addEventListener('click', function (e) {
+        e.preventDefault(); 
+  
+  
+        window.scrollTo({
+          top: scrollToEl.offsetTop,
+          behavior: 'smooth' 
+        });
+      });
+    }
+  });
