@@ -292,6 +292,152 @@ header .liNav:hover .submenu{
 }
 /********************/
 /********************/
+.sectionNosotros div:nth-child(2){
+    padding: 0 90px 0 40px;
+}
+.sectionNosotros{
+    display: flex;
+    margin: 40px 0;
+}
+.sectionNosotros p{
+    font-size: 30px;
+    line-height: 46px;
+    color: var(--gris);
+    text-align: justify;
+}
+.sectionNosotros p b{
+    color: var(--azul);
+}
+.titleNosotros span{
+    color: var(--azul);
+    font-size: 42px;
+    font-family: 'saira-semibold';
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+}
+.titleNosotros span:nth-child(2){
+    color: var(--blanco);
+    position: relative;
+    z-index: 1;
+    font-size: 56px;
+    font-family: 'saira-bold';
+    padding: 10px 5px;
+}
+.titleNosotros span:nth-child(2)::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    transform: skew(-15deg);
+    border: 2px solid var(--azul);
+    position: absolute;
+    color: #FFFFFF;
+    line-height: 0;
+    background-color: var(--azul);
+    z-index: -1;
+    left: 0;
+    top: 0;
+}
+/********************/
+/********************/
+.sectionTabs{
+    margin-top: 80px;
+}
+.tabs-container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tabs-buttons {
+    margin: 0px auto 10px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.tab-button {
+    font-size: 20px;
+    font-family: 'saira-regular';
+    text-decoration: none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 52px;
+    color: var(--azul);
+    z-index: 1;
+    text-transform: uppercase;
+    margin-left: 30px;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+}
+.tab-button:first-child{
+    margin-left: 0;
+}
+.tab-button span{
+    margin: 0 auto;
+    z-index: 1;
+}
+.tab-button::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    transform: skew(-15deg);
+    border: 2px solid var(--azul);
+    position: absolute;
+    color: #FFFFFF;
+    line-height: 0;
+}
+.tab-button.active {
+    color: white;
+    font-family: 'saira-semibold';
+}
+.tab-button.active::before{
+    background-color: var(--azul);
+}
+
+.tab-content {
+    display: none;
+    padding: 20px 80px;
+    background-image: url('../img/iconGoals.png');
+    background-repeat: no-repeat;
+    background-position-y: 49px;
+    text-align: justify;
+}
+.tab-content p{
+    color: var(--gris);
+    font-size: 33px;
+    line-height: 1.2;
+}
+.tab-content.active {
+    display: block;
+}
+button:focus {
+    outline: none;
+    background-color: transparent;
+}
+/*****************/
+/*****************/
+
+.buttonWhite {
+    font-size: 20px;
+    font-family: 'saira-regular';
+    text-decoration: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 52px;
+    color: var(--azul);
+    z-index: 1;
+    text-transform: uppercase;
+    margin-left: 30px;
+}
+
+/********************/
+/********************/
 .slider-sectionpage .slider-container {
     width: 920px;
     margin: 0 auto;
@@ -624,7 +770,6 @@ header .liNav:hover .submenu{
 .sectionDatos{
     margin-bottom: 40px;
 }
-
 
 
 /*****************/
