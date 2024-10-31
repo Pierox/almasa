@@ -28,8 +28,13 @@
     font-family: 'saira-regular';
     src: url('../fonts/Saira-Regular.ttf')  format('truetype');
 }
+@font-face {
+    font-family: 'saira-light';
+    src: url('../fonts/Saira-Light.ttf')  format('truetype');
+}
 html {
     scroll-behavior: smooth;
+    font-family: 'saira-regular';
   }
 ul, ul li{
     list-style: none;
@@ -112,6 +117,10 @@ header ul.submenu{
     width: 333px;
     transform: skew(-15deg);
     border-top: none;
+    z-index: 3;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.36);
+-moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.36);
+box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.36);
 }
 header ul.submenu a{
     color: var(--gris) !important;
@@ -637,6 +646,10 @@ button:focus {
     z-index: 2;
     line-height: 1;
 }
+.titleSection.inquietud{
+    font-family: 'saira-semibold';
+    font-size: 41px;
+}
 .titleDiv{
     font-family: 'saira-bold';
     color: var(--azul);
@@ -672,6 +685,9 @@ button:focus {
     top: 53px;
     left: -24px;
     z-index: -1;
+}
+.titleSection.inquietud::after{
+    background-image: none;
 }
 
 
@@ -714,7 +730,7 @@ button:focus {
 .contfullblue .divDatos:last-child{
     border-right: none;
 }
-.containerCuadritosServicios{
+.containerCuadritosItems{
     display: flex;
     flex-wrap: wrap;
 }
@@ -722,7 +738,7 @@ button:focus {
     width: 100%;
     display: block;
 }
-.cuadritoServicios{
+.cuadritoItems{
     width: 20%;
     position: relative;
     cursor: pointer;
@@ -762,32 +778,33 @@ button:focus {
     opacity: 0;
     transition: opacity 0.5s ease;
 }
-.cuadritoServicios:hover .cuadritoCeleste{
+.cuadritoItems:hover .cuadritoCeleste{
     background-color: rgba(0,64,161,0.8);
 }
-.cuadritoServicios:hover .cuadritoCeleste > img,
-.cuadritoServicios:hover .cuadritoCeleste > div{
+.cuadritoItems:hover .cuadritoCeleste > img,
+.cuadritoItems:hover .cuadritoCeleste > div{
     opacity: 1;
 }
 
 
-.filtrado .cuadritoServicios {
+.filtrado .cuadritoItems {
     display: none;
 }
 
-.filtrado .cuadritoServicios.active {
+.filtrado .cuadritoItems.active {
     display: block;
 }
-.botonesFilterServicios{
+.botonesFilter{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin-bottom: 30px;
+    justify-content: center;
 }
-.botonesFilterServicios a:first-child{
+.botonesFilter a:first-child{
     margin-left: 0px;
 }
-.botonesFilterServicios a {
+.botonesFilter a {
     font-size: 20px;
     font-family: 'saira-regular';
     text-decoration: none;
@@ -795,7 +812,7 @@ button:focus {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 20px;
+    padding: 10px 20px;
     width: 262px;
     color: var(--azul);
     z-index: 1;
@@ -805,9 +822,9 @@ button:focus {
     text-align: center;
     margin-bottom: 24px;
 }
-.botonesFilterServicios a.active {
+.botonesFilter a.active {
     font-size: 20px;
-    font-family: 'saira-regular';
+    font-family: 'saira-semibold';
     text-decoration: none;
     position: relative;
     display: flex;
@@ -816,7 +833,7 @@ button:focus {
     z-index: 1;
     text-transform: uppercase;
 }
-.botonesFilterServicios a::before {
+.botonesFilter a::before {
     content: '';
     width: 100%;
     height: 100%;
@@ -829,7 +846,7 @@ button:focus {
     left: 0;
     top: 0;
 }
-.botonesFilterServicios a.active::before {
+.botonesFilter a.active::before {
     content: '';
     width: 100%;
     height: 100%;
@@ -972,7 +989,173 @@ input.invalid, select.invalid {
 }
 /*****************/
 /*****************/
+.contEticoText{
+    max-width: 1600px;
+    width: calc(100% - 80px);
+    margin: 0 auto;
+}
+.graysection{
+    background-color: var(--grisMasClaro);
+}
+.divEtic{
+    text-align: center;
+    width: 451px;
+}
+.divEtic span{
+    display: block;
+    font-family: 'saira-regular';
+    font-size: 33px;
+}
+.divEtic span.boldy{
+    color: var(--azul);
+    font-family: 'saira-bold';
+}
+.flexEtic{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.divInquietud{
+    margin: 0 auto;
+    width: 670px;
+    padding: 0 20px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    text-align: center;
+}
+.divInquietud p{
+    font-size: 25px;
+    color: var(--gris);
+    line-height: 1.5;
+    text-align: center;
+}
+.divInquietud .title-inquietud{
+    font-family: 'saira-semibold';
+    font-size: 42px;
+    color: var(--azul);
+}
+.divInquietud .buttonBlue{
+    font-size: 20px;
+    font-family: 'saira-regular';
+    text-decoration: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;  
+    padding: 8px 20px 3px 20px;
+    margin: 0 auto;
+    line-height: 1;
+    margin-bottom: 40px;
+}
+.divInquietud .buttonBlue::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    transform: skew(-15deg);
+    background: var(--azul);
+    border: 2px solid var(--azul);
+    position: absolute;
+    color: #FFFFFF;
+    line-height: 0;
+    left: 0;
+    top: 0;
+}
+.divInquietud .buttonBlue span{
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    padding: 5px 0;
+}
 
+/*****************/
+/*****************/
+.container-inquietud-formulario{
+    max-width: 1024px;
+    width: calc(100% - 40px);
+    margin: 0 auto;
+}
+.form-section-header {
+    padding: 15px;
+    color: var(--azul);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--blanco);
+    font-family: 'saira-medium';
+    font-size: 20px;
+}
+.active .form-section-header {
+    background-color: var(--azul);
+    color: #fff;
+}
+/* .form-section-header:focus{
+    outline: 0;
+    background: inherit;
+} */
+.form-section-header i {
+    font-style: normal; /* Para asegurar que los símbolos + y - se vean como texto */
+}
+.collapsible-body label {
+    font-size: 20px;
+    color: var(--azul);
+}
+.collapsible-body [type="radio"]:not(:checked) + span, .collapsible-body [type="radio"]:checked + span,
+.collapsible-body input[type="text"] {
+    font-size: 20px;
+}
+.flex-collapsible{
+    padding-bottom: 60px;
+}
+.flex-collapsible > div{
+    float: left;
+    margin-right: 20px;
+}
+
+ .btn{
+    font-size: 20px;
+    font-family: 'saira-regular';
+    text-decoration: none;
+    position: relative;
+    align-items: center;
+    width: 159px;
+    color: #FFFFFF;
+    z-index: 1;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    padding-top: 5px;
+    padding-bottom: 37px;
+}
+
+ .btn::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    transform: skew(-15deg);
+    background: var(--azul);
+    border: 2px solid #FFFFFF;
+    position: absolute;
+    color: #FFFFFF;
+    line-height: 0;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+#formInquietud p{
+    font-size: 25px;
+    font-family: 'saira-light';
+}
+/*****************/
+/*****************/
 
 
 footer{

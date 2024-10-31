@@ -37,7 +37,7 @@ $(document).ready(function() {
 
   document.addEventListener('DOMContentLoaded', function () {
     const scrollToBtn = document.querySelector('.arrowDownSection');
-    const scrollToEl = document.querySelector('.containerCuadritosServicios');
+    const scrollToEl = document.querySelector('.containerCuadritosItems');
   
     if (scrollToBtn && scrollToEl) { 
       scrollToBtn.addEventListener('click', function (e) {
