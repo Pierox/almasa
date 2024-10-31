@@ -15,9 +15,9 @@
 <body>
     <header>
         <a href="#">
-            <img src="img/logo-header.png" alt="logo header">
+            <img src="img/logo-header.png" class="logo-header" alt="logo header">
         </a>
-        <nav>
+        <nav class="nav-desktop">
             <ul>
                 <li>
                     <div class="hoverlink">
@@ -38,7 +38,7 @@
             <ul>
                 <li class="liNav">
                     <div class="hoverlink">
-                        <a href="#">
+                        <a href="/nosotros.html">
                             <span>Nosotros</span>
                         </a>
                     </div>
@@ -214,41 +214,38 @@
             <div class="row">
                 <form class="col s12" id="formContacto">
                     <div class="row">
-                        <div class="input-field col s3">
+                        <div class="input-field col l3 m6 s12">
                             <input id="nombre" type="text" class="validate" required>
                             <label for="nombre">Nombre</label>
                             <span class="helper-text" data-error="Nombre requerido"></span>
                         </div>
-                        <div class="input-field col s3">
+                        <div class="input-field col l3 m6 s12">
                             <input id="apellido" type="text" class="validate" required>
                             <label for="apellido">Apellido</label>
                             <span class="helper-text" data-error="Apellido requerido"></span>
                         </div>
-                        <div class="input-field col s6">
+                        <div class="input-field col l6 m6 s12">
                             <input id="empresa" type="text" class="validate">
                             <label for="empresa">Empresa</label>
                             <span class="helper-text" data-error="Este campo es obligatorio"></span>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="input-field col s6">
+                
+                        <div class="input-field col l6 m6 s12">
                             <input id="email" type="email" class="validate" required>
                             <label for="email">Email</label>
                             <span class="helper-text" data-error="Email inválido"></span>
                         </div>
-                        <div class="input-field col s6">
+                        <div class="input-field col m6 s12">
                             <input id="cargo" type="text" class="validate" required>
                             <label for="cargo">Cargo</label>
                             <span class="helper-text" data-error="Cargo requerido"></span>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="input-field col s6">
+                        <div class="input-field col m6 s12">
                             <input id="telefono" type="text" class="validate" required pattern="^[0-9]{9,15}$">
                             <label for="telefono">Teléfono</label>
                             <span class="helper-text" data-error="Debe contener entre 9 y 15 dígitos"></span>
                         </div>
-                        <div class="input-field col s6">
+                        <div class="input-field col m6 s12">
                             <select id="servicio" required>
                                 <option value="" disabled selected>Servicio de interés</option>
                                 <option value="1">Option 1</option>

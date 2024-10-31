@@ -15,9 +15,9 @@
 <body>
     <header>
         <a href="#">
-            <img src="img/logo-header.png" alt="logo header">
+            <img src="img/logo-header.png" class="logo-header" alt="logo header">
         </a>
-        <nav>
+        <nav class="nav-desktop">
             <ul>
                 <li>
                     <div class="hoverlink">
@@ -38,7 +38,7 @@
             <ul>
                 <li class="liNav">
                     <div class="hoverlink">
-                        <a href="#">
+                        <a href="/nosotros.html">
                             <span>Nosotros</span>
                         </a>
                     </div>
@@ -162,45 +162,36 @@
             </h3>
             <div class="contfullblue">
                 <div class="divDatos">
-                    <span class="boldDatos">+100 HABILITACIONES <br>
+                    <span class="boldDatos" data-target="100">+0 HABILITACIONES <br>
                         URBANAS </span>
                     <span>(RESIDENCIALES + INDUSTRIALES)</span>
                 </div>
                 <div class="divDatos">
-                    <span class="boldDatos">
-                        5,100,000 <span>m3</span>
-                    </span>
-                    <span>
-                        MOV. DE TIERRAS
-                    </span>
+                    <div>
+                        <span class="boldDatos" data-target="5100000">0 </span><span>m3</span>
+                    </div>
+                    <span>MOV. DE TIERRAS</span>
                 </div>
                 <div class="divDatos">
-                    <span class="boldDatos">
-                        1,000,000 <span>m3</span>
-                    </span>
-                    <span>
-                        pavimentaciones
-                    </span>
+                    <div>
+                        <span class="boldDatos" data-target="1000000">0 </span><span>m3</span>
+                    </div>
+                    <span>pavimentaciones</span>
                 </div>
                 <div class="divDatos">
-                    <span class="boldDatos">
-                        150,000 <span>m3</span>
-                    </span>
-                    <span>
-                        de concreto
-                    </span>
+                    <div>
+                        <span class="boldDatos" data-target="150000">0 </span><span>m3</span>
+                    </div>
+                    <span>de concreto</span>
                 </div>
                 <div class="divDatos">
-                    <span class="boldDatos">
-                        130,000 <span>m3</span>
-                    </span>
-                    <span>
-                        de demolición
-                    </span>
+                    <div>
+                        <span class="boldDatos" data-target="130000">0 </span><span>m3</span>
+                    </div>
+                    <span>de demolición</span>
                 </div>
             </div>
         </section>
-
        
         <section class="sectionTabs">
             <div class="tabs-container">
@@ -253,41 +244,38 @@
             <div class="row">
                 <form class="col s12" id="formContacto">
                     <div class="row">
-                        <div class="input-field col s3">
+                        <div class="input-field col l3 m6 s12">
                             <input id="nombre" type="text" class="validate" required>
                             <label for="nombre">Nombre</label>
                             <span class="helper-text" data-error="Nombre requerido"></span>
                         </div>
-                        <div class="input-field col s3">
+                        <div class="input-field col l3 m6 s12">
                             <input id="apellido" type="text" class="validate" required>
                             <label for="apellido">Apellido</label>
                             <span class="helper-text" data-error="Apellido requerido"></span>
                         </div>
-                        <div class="input-field col s6">
+                        <div class="input-field col l6 m6 s12">
                             <input id="empresa" type="text" class="validate">
                             <label for="empresa">Empresa</label>
                             <span class="helper-text" data-error="Este campo es obligatorio"></span>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="input-field col s6">
+                
+                        <div class="input-field col l6 m6 s12">
                             <input id="email" type="email" class="validate" required>
                             <label for="email">Email</label>
                             <span class="helper-text" data-error="Email inválido"></span>
                         </div>
-                        <div class="input-field col s6">
+                        <div class="input-field col m6 s12">
                             <input id="cargo" type="text" class="validate" required>
                             <label for="cargo">Cargo</label>
                             <span class="helper-text" data-error="Cargo requerido"></span>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="input-field col s6">
+                        <div class="input-field col m6 s12">
                             <input id="telefono" type="text" class="validate" required pattern="^[0-9]{9,15}$">
                             <label for="telefono">Teléfono</label>
                             <span class="helper-text" data-error="Debe contener entre 9 y 15 dígitos"></span>
                         </div>
-                        <div class="input-field col s6">
+                        <div class="input-field col m6 s12">
                             <select id="servicio" required>
                                 <option value="" disabled selected>Servicio de interés</option>
                                 <option value="1">Option 1</option>
@@ -407,6 +395,7 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="materialize/js/materialize.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="js/datos.js"></script>
     <script src="js/formulario.js"></script>
     <script src="js/tabs.js"></script>
 </body>

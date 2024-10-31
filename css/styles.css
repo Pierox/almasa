@@ -704,7 +704,6 @@ button:focus {
 }
 .contfullblue span:first-child,
 .contfullblue span:last-child{
-    display: block;
     text-align: center;
 }
 .contfullblue span{
@@ -726,6 +725,9 @@ button:focus {
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
+}
+.contfullblue .divDatos div{
+    display: flex;
 }
 .contfullblue .divDatos:last-child{
     border-right: none;
@@ -865,6 +867,9 @@ button:focus {
     display: flex;
     flex-wrap: wrap;
 }
+#whySection .container-1634{
+    justify-content: center;
+}
 .container-1634 .divWhy{
     padding-left: 60px;
     padding-right: 60px;
@@ -939,7 +944,8 @@ input.invalid, select.invalid {
 /*****************/
 
 .ubicanos{
-    width: 1800px;
+    max-width: 1800px;
+    width: 100%;
     height: 499px;
     background: url('../img/map.png') no-repeat;
     display: flex;
@@ -1193,4 +1199,314 @@ footer .listRedes li{
 }
 footer .listRedes img{
     width: 36px;
+}
+
+@media(max-width:2000px){
+    .paralelogramDivBanner{
+       left: 410px;
+    }
+}
+@media(max-width:1660px){
+    .contfullblue span.boldDatos{
+        font-size: 36px;
+    }
+    .contfullblue .divDatos{
+        padding: 0 20px;
+    }
+   
+}
+@media(max-width:1600px){
+    .carouselClientes > div img{
+        max-width: 250px;
+    }
+    .container-1300{
+        max-width: 100%;
+    }
+    .ubicanos {
+        background-position-x: -278px;
+    }
+    .ubicanos .cuadroUbicanos{
+        margin-left: 20px;
+        padding: 34px 20px 30px 20px;
+    }
+    .cuadritoCeleste span{
+        font-size: 23px;
+    }
+    
+}
+
+
+@media(max-width:1526px){
+    .nav-desktop{
+        display: none;
+    }
+    .paralelogramDivBanner .mayorText{
+        font-size: 40px;
+    }
+    .paralelogramDivBanner .minurText{
+        font-size: 26px;
+    }
+    
+    .paralelogramDivBanner .mayorText {
+        font-size: 36px;
+    }
+    .paralelogramDivBanner > div{
+        padding: 44px 40px;
+    }
+    .paralelogramDivBanner .mayorText{
+        width: 420px;
+    }
+}
+@media(max-width:1386px){
+    .contfullblue span{
+        font-size: 20px;
+    }
+    .contfullblue span.boldDatos{
+        font-size: 30px;
+    }
+    .contfullblue .divDatos{
+        padding: 0 5px;
+    }
+    .contMedia{
+        flex-direction: column;
+    }
+    .sectionMedia .divVideoMedia img {
+        top: 0;
+        width: 100%;
+    }
+    .titleSection{
+        font-size: 46px;
+    }
+    .cuadritoItems{
+        width: 25%;
+    }
+    
+}
+@media(max-width:1200px){
+    .ubicanos .cuadroUbicanos p .subtitle{
+        font-size: 20px;
+    }
+    .ubicanos .cuadroUbicanos p{
+        font-size: 18px;
+    }
+    .ubicanos .cuadroUbicanos .titleUbicanos{
+        font-size: 30px;
+    }
+    footer a{
+        font-size: 23px;
+        line-height: 1.5;
+    }
+    p{
+        font-size: 28px;
+        line-height: 1.5;
+    }
+}
+@media(max-width:1140px){
+    .sectionForm{
+        padding: 0 20px;
+    }
+    .ubicanos {
+        background-position-x: -530px;
+    }
+    .titleSection{
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+    }
+    .titleSection::after{
+        left: 4px;
+    }
+    .cuadritoItems{
+        width: 33.33%;
+    }
+}
+@media(max-width:1064px){
+    .contfullblue{
+        flex-direction: column;
+    }
+    .contfullblue span.boldDatos{
+        margin: 0 auto;
+        font-size: 45px;
+    }
+    .contfullblue span{
+        font-size: 23px;
+    }
+    .contfullblue .divDatos{
+        flex-direction: column;
+        text-align: center;
+    }
+    .contfullblue .divDatos {
+        padding: 10px 5px;
+    }
+    .sectionMedia .subtitle,
+    .sectionMedia .subtitle.plus,
+    .titleDiv {
+        font-size: 28px;
+    }
+    .sectionMedia p,
+    .divWhy p{
+        font-size: 24px;
+    }
+    .sectionMedia .divTextoMedia > div{
+        width: calc(100% - 40px);
+    }
+    .container-1634 .divWhy{
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        width: calc(50% - 80px);
+    }
+
+    
+}
+@media(max-width:990px){
+    footer .container-1300 .columnFooter:first-child img, footer .container-1300 .columnFooter:first-child div {
+        padding-left: 0;
+    }
+    .container-1634.greyline .divWhy:nth-child(2n) {
+        border-left: none;
+    }
+    .container-1634 .divWhy{
+        width: 100%;
+    }
+    .paralelogramDivBanner {
+        left: 310px;
+        top: 77%;
+    }
+    .paralelogramDivBanner .mayorText {
+        font-size: 30px;
+    }
+    .paralelogramDivBanner .minurText{
+        font-size: 18px;
+    }
+    .paralelogramDivBanner a.buttonBanner{
+        font-size: 16px;
+        width: 130px;
+    }
+    .paralelogramDivBanner > div{
+        padding: 20px 30px;
+    }
+    .paralelogramDivBanner .mayorText{
+        width: 320px;
+    }
+    
+}
+@media(max-width:860px){
+    .ubicanos .cuadroUbicanos{
+        width: 100%;
+        margin-left: 0;
+    }
+    .ubicanos{
+        align-items: flex-start;
+        height: 660px;
+        background-position-x: 90%;
+        background-position-y: 110%;
+        background-size: 1361px;
+    }
+    
+    
+}
+@media(max-width:740px){
+    footer .container-1300{
+        flex-direction: column;
+    }
+    .columnFooter{
+        width: 100%;
+    }
+    .cuadritoItems{
+        width: 50%;
+    }
+}
+@media(max-width:620px){
+    .contfullblue .divDatos {
+        padding: 10px 20px;
+    }
+    footer .listRedes{
+        float: left;
+        padding-right: inherit;
+    }
+    .container-1634 .divWhy{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .cuadritoItems:hover .cuadritoCeleste > img{
+        width: 30px;
+    }
+    .cuadritoCeleste{
+        width: calc(100% - 20px);
+        height: calc(100% - 20px);
+    }
+    .cuadritoCeleste{
+        padding: 10px;
+    }
+    .cuadritoCeleste span {
+        font-size: 18px;
+    }
+    .titleSection::after{
+        display: none;
+    }
+    .paralelogramDivBanner {
+        left: 200px;
+        top: 77%;
+    }
+    .paralelogramDivBanner .mayorText {
+        width: auto;
+    }
+    .paralelogramDivBanner .mayorText {
+        font-size: 24px;
+    }
+    .paralelogramDivBanner > div {
+        padding: 20px 30px;
+    }
+    .paralelogramDivBanner .contButtons{
+        flex-direction: column;
+    }
+    .paralelogramDivBanner a.buttonBanner:last-child{
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .logo-header{
+        width: 140px;
+    }
+    .titleSection {
+        font-size: 36px;
+        padding-bottom: 20px;
+        padding-top: 30px;
+    }
+    
+}
+@media(max-width:440px){
+
+    .ubicanos{
+        height: 749px;
+        background-position-x: 80%;
+        background-position-y: 100%;
+        background-size: 1481px;
+    }
+    
+}
+@media(max-width:420px){
+    .contfullblue span.boldDatos {
+        font-size: 38px;
+    }
+    footer ul.navFooter li{
+        padding-left: 0;
+    }
+    footer ul.navFooter{
+        flex-direction: column;
+    }
+    footer .container-1300 .columnFooter:first-child img{
+        width: 100%;
+    }
+    
+
+}
+@media(max-width:340px){
+    .contfullblue span.boldDatos {
+        font-size: 30px;
+    }
+    .contfullblue span {
+        font-size: 20px;
+    }
 }
