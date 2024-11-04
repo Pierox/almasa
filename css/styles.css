@@ -97,12 +97,25 @@ header ul li:hover .hoverlink:before{
     color: #FFFFFF;
     line-height: 0;
     left: 0;
+    top: 0;
+}
+ul:not(.browser-default) > li span,
+ul:not(.browser-default) > li img{
+    z-index: 3;
+    position: relative;
 }
 header ul li a{
     position: relative;
     display: block;
-    padding: 13px 0;
     z-index: 2;
+}
+header ul li{
+    /* height: 47px; */
+    cursor: pointer;
+}
+header ul li .hoverlink{
+    padding: 13px 0;
+
 }
 header ul:last-child{
     border-top: 1px solid #FFFFFF;
@@ -125,8 +138,7 @@ box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.36);
 header ul.submenu a{
     color: var(--gris) !important;
     display: block;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 16px 20px;
     text-transform: initial;
     transform: skew(15deg);
 }
@@ -173,11 +185,15 @@ p{
     width: calc(100% - 55px);
     margin: 0 auto;
 }
+
 .container-1300{
     max-width: 1300px;
     margin: 0 auto;
     width: 100%;
     display: flex;
+}
+.sectionForm .container-1300{
+    padding-bottom: 30px;
 }
 
 /***********************/
@@ -209,6 +225,7 @@ p{
     display: inline-block;
     padding-left: 20px;
     padding-right: 20px;
+    line-height: 1.2;
 }
 .sectionMedia .subtitle.plus2{
     font-family: 'saira-bold';
@@ -249,6 +266,7 @@ p{
 }
 .modal.video{
     width: 800px;
+    background-color: var(--azul) !important;
 }
 .modal.video iframe{
     width: 800px;
@@ -327,6 +345,7 @@ p{
 .sectionNosotros div:nth-child(2){
     padding: 0 90px 0 40px;
 }
+
 .sectionNosotros{
     display: flex;
     margin: 40px 0;
@@ -490,6 +509,7 @@ button:focus {
     top: 0;
 }
 
+
 .slider-sectionpage .slider-nav img {
     width: 190px;
     height: 115px;
@@ -504,12 +524,11 @@ button:focus {
 }
 .slider-sectionpage .slider-nav .slick-track{
     transform: initial !important; 
-    width: 578px !important;
+    width: fit-content !important;
 }
 .slider-sectionpage .slider-nav{
     position: relative;
-    margin-top: -119px;
-    top: -74px;
+    bottom: 190px;
 }
 .slider-sectionpage .slider-nav .slick-track{
     border: 7px solid var(--blanco);
@@ -520,6 +539,7 @@ button:focus {
     bottom: -56px !important;
     left: -9px !important;
     display: flex !important;
+    z-index: 1;
 }
 
 
@@ -552,7 +572,8 @@ button:focus {
 
 .sectionMedia.servicios .divTextoMedia ul.greenLi{
     list-style-image: url(../img/listGreen.png);
-    min-width: 720px;
+    max-width: 720px;
+    width: 100%;
     margin-top: 40px;
     margin-bottom: 40px;
 }
@@ -735,6 +756,8 @@ button:focus {
 .containerCuadritosItems{
     display: flex;
     flex-wrap: wrap;
+    width: calc(100% - 40px);
+    margin: 0 auto;
 }
 .servicioImg{
     width: 100%;
@@ -795,6 +818,10 @@ button:focus {
 
 .filtrado .cuadritoItems.active {
     display: block;
+}
+.filtrado .cuadritoItems img{
+    width: calc(100% - 40px);
+    margin: 0 auto;
 }
 .botonesFilter{
     display: flex;
@@ -1007,6 +1034,9 @@ input.invalid, select.invalid {
     text-align: center;
     width: 451px;
 }
+.divEtic img{
+    width: 98px;
+}
 .divEtic span{
     display: block;
     font-family: 'saira-regular';
@@ -1024,7 +1054,8 @@ input.invalid, select.invalid {
 }
 .divInquietud{
     margin: 0 auto;
-    width: 670px;
+    max-width: 670px;
+    width: calc(100% - 40px);
     padding: 0 20px;
     padding-bottom: 40px;
     padding-top: 40px;
@@ -1098,9 +1129,18 @@ input.invalid, select.invalid {
     font-family: 'saira-medium';
     font-size: 20px;
 }
-.active .form-section-header {
+.active .form-section-header,
+.form-section-header:hover,
+.sidenav .collapsible-header:hover, .sidenav.fixed .collapsible-header:hover {
     background-color: var(--azul);
     color: #fff;
+}
+.sidenav .form-section-header{
+    font-size: 14px;
+    padding: 0 32px;
+}
+.collapsible-body{
+
 }
 /* .form-section-header:focus{
     outline: 0;
@@ -1139,7 +1179,6 @@ input.invalid, select.invalid {
     border: none;
     box-shadow: none;
     padding-top: 5px;
-    padding-bottom: 37px;
 }
 
  .btn::before{
@@ -1159,6 +1198,67 @@ input.invalid, select.invalid {
 #formInquietud p{
     font-size: 25px;
     font-family: 'saira-light';
+}
+/*****************/
+/*****************/
+.sidenav{
+    background-color: var(--azul);
+}
+.sidenav-trigger{
+    height: 58px;
+    margin: 10px;
+    display: none;
+}
+.sidenav-trigger i{
+    font-size: 58px;
+}
+.sidenav li > a:hover{
+    background-color: var(--blanco);
+    color: var(--azul);
+}
+.sidenav li .collapsible-body a{
+    height: 48px;
+    line-height: 48px;
+    padding: 0 32px 0 50px;
+    font-size: 14px;
+    font-weight: 500;
+    display: block;
+    text-transform: uppercase;
+    color: var(--blanco);
+    background-color: var(--azul);
+}
+.sidenav li .collapsible-header{
+    color: var(--blanco) !important;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px 0 32px;
+}
+.sidenav li .collapsible-header.active,
+.sidenav li .collapsible-header:hover{
+    background-color: var(--blanco);
+}
+.sidenav li .collapsible-header.active span,
+.sidenav li .collapsible-header.active i,
+.sidenav li .collapsible-header:hover span,
+.sidenav li .collapsible-header:hover i{
+    color: var(--azul);
+}
+.sidenav li .collapsible-header span{
+    text-transform: uppercase;
+}
+.sidenav li .collapsible-body a:hover{
+    background-color: var(--blanco);
+    color: var(--azul);
+}
+.sidenav li > a{
+    text-transform: uppercase   !important;
+    padding: 0 10px 0 32px;
+    color: var(--blanco);
+    font-family: 'saira-medium';
+}
+.sidenav .collapsible-header i{
+    margin-right: 0;
+    font-style: normal;
 }
 /*****************/
 /*****************/
@@ -1206,6 +1306,22 @@ footer .listRedes img{
        left: 410px;
     }
 }
+@media(max-width:1800px) {
+    .sectionMedia .parrafsection,
+    .sectionForm p{
+        width: calc(100% - 40px);
+        margin: 0 auto;
+    }
+    .divEtic{
+        width: 400px;
+    }
+    .divEtic img{
+        width: 70px;
+    }
+    .divEtic span{
+        font-size: 23px;
+    }
+}
 @media(max-width:1660px){
     .contfullblue span.boldDatos{
         font-size: 36px;
@@ -1213,6 +1329,10 @@ footer .listRedes img{
     .contfullblue .divDatos{
         padding: 0 20px;
     }
+    .slider-sectionpage .slider-container{
+        width: 800px;
+    }
+    
    
 }
 @media(max-width:1600px){
@@ -1232,13 +1352,33 @@ footer .listRedes img{
     .cuadritoCeleste span{
         font-size: 23px;
     }
-    
+    .sectionMedia p, .sectionMedia .parrafsection, 
+    .sectionForm p,.divInquietud p,
+    .contEticoText p,
+    .sectionMedia.servicios.obras .divTextoMedia ul li,
+    .sectionMedia.servicios .divTextoMedia ul li, .divWhy p{
+        font-size: 28px;
+    }
+    .sectionMedia .subtitle.plus,
+    .sectionMedia .subtitle.plus2{
+        font-size: 32px;
+        display: block;
+        margin: 0 auto;
+    }
+    .sectionMedia.servicios .subtitle{
+        min-width: 320px;
+        width: calc(100% - 80px);
+        max-width: 500px;
+    }
 }
 
 
 @media(max-width:1526px){
-    .nav-desktop{
-        display: none;
+    header, header a{
+        font-size: 14px;
+    }
+    header ul li .hoverlink{
+        width: 129px;
     }
     .paralelogramDivBanner .mayorText{
         font-size: 40px;
@@ -1256,6 +1396,27 @@ footer .listRedes img{
     .paralelogramDivBanner .mayorText{
         width: 420px;
     }
+    .titleNosotros span:nth-child(2){
+        font-size: 46px;
+    }
+    .titleNosotros span{
+        font-size: 32px;
+        line-height: 1.5;
+    }
+    .sectionNosotros div:first-child img{
+        width: 500px;
+    }
+    .slider-sectionpage .slider-container{
+        width: 700px;
+    }
+    .slider-sectionpage .slider-nav img{
+        width: 135px;
+        height: 55px;
+    }
+    .slider-sectionpage .slider-nav {
+        position: relative;
+        bottom: 142px;
+    }
 }
 @media(max-width:1386px){
     .contfullblue span{
@@ -1267,9 +1428,7 @@ footer .listRedes img{
     .contfullblue .divDatos{
         padding: 0 5px;
     }
-    .contMedia{
-        flex-direction: column;
-    }
+    
     .sectionMedia .divVideoMedia img {
         top: 0;
         width: 100%;
@@ -1280,14 +1439,69 @@ footer .listRedes img{
     .cuadritoItems{
         width: 25%;
     }
+    .sectionMedia p,.divInquietud p,
+    .contEticoText p,
+    .sectionMedia .parrafsection,
+    .sectionForm p,
+    .divWhy p{
+        font-size: 28px;
+    }
+    .sectionMedia.servicios .divTextoMedia ul li,
+    .sectionMedia.servicios.obras .divTextoMedia ul li{
+        font-size: 24px;
+    }
+    .sectionMedia .subtitle.plus, .sectionMedia .subtitle.plus2{
+        font-size: 28px;
+        line-height: 1.2;
+    }
+    .sectionMedia.servicios .subtitle.subtitlegreen{
+        font-size: 24px;
+    }
+    .sectionMedia.servicios .subtitle.subtitlegreen::before{
+        top: 23px;
+    }
+    .divEtic{
+        width: 300px;
+    }
+    .divEtic img{
+        width: 60px;
+    }
+    .divEtic span{
+        font-size: 20px;
+    }
+    header, header a {
+        font-size: 12px;
+    }
+    header ul li .hoverlink {
+        width: 109px;
+    }
+    header nav{
+        margin-top: 20px;
+        margin-right: 18px;
+    }
+    .logo-header{
+        width: 240px;
+    }
     
 }
 @media(max-width:1200px){
+    .modal.video iframe {
+        width: 590px;
+        height: 350px;
+    }
+    .modal.video {
+        width: 590px;
+    }
     .ubicanos .cuadroUbicanos p .subtitle{
         font-size: 20px;
     }
-    .ubicanos .cuadroUbicanos p{
-        font-size: 18px;
+    .ubicanos .cuadroUbicanos p,
+    .tab-content p,
+    .sectionNosotros p{
+        font-size: 24px;
+    }
+    .sectionNosotros p{
+        line-height: 1.5;
     }
     .ubicanos .cuadroUbicanos .titleUbicanos{
         font-size: 30px;
@@ -1299,6 +1513,15 @@ footer .listRedes img{
     p{
         font-size: 28px;
         line-height: 1.5;
+    }
+    .sectionNosotros div:first-child img{
+        width: 600px;
+    }
+    .titleNosotros span:nth-child(2){
+        font-size: 36px;
+    }
+    .titleNosotros span{
+        font-size: 22px;
     }
 }
 @media(max-width:1140px){
@@ -1319,8 +1542,40 @@ footer .listRedes img{
     .cuadritoItems{
         width: 33.33%;
     }
+    .sectionNosotros div:first-child img{
+        width: 400px;
+    }
+    .contMedia{
+        flex-direction: column;
+    }
+    .slider-sectionpage .slider-container {
+        width: calc(100% - 40px);
+    }
+    .flexEtic{
+        flex-direction: column;
+        align-items: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .divEtic{
+        padding: 0 0 40px 0;
+        
+    }
+    .divInquietud .title-inquietud{
+        font-size: 36px;
+    }
 }
 @media(max-width:1064px){
+    .sectionMedia.servicios .contMedia{
+        margin-top: 40px;
+    }
+    .sectionMedia.servicios{
+        margin-bottom: 40px;
+    }
+    .botonesFilter a,
+    .botonesFilter a.active{
+        font-size: 14px;
+    }
     .contfullblue{
         flex-direction: column;
     }
@@ -1334,6 +1589,7 @@ footer .listRedes img{
     .contfullblue .divDatos{
         flex-direction: column;
         text-align: center;
+        border-right: none;
     }
     .contfullblue .divDatos {
         padding: 10px 5px;
@@ -1343,9 +1599,19 @@ footer .listRedes img{
     .titleDiv {
         font-size: 28px;
     }
-    .sectionMedia p,
+    .ubicanos .cuadroUbicanos p,
+    .tab-content p,
+    .sectionNosotros p{
+        font-size: 18px;
+    }
+    .sectionMedia p,.divInquietud p,
+    .contEticoText p,
+    .sectionMedia .parrafsection,
+    .sectionForm p,#formInquietud p,
+    .sectionMedia.servicios .divTextoMedia ul li,
+    .sectionMedia.servicios.obras .divTextoMedia ul li,
     .divWhy p{
-        font-size: 24px;
+        font-size: 18px;
     }
     .sectionMedia .divTextoMedia > div{
         width: calc(100% - 40px);
@@ -1361,6 +1627,12 @@ footer .listRedes img{
     
 }
 @media(max-width:990px){
+    .nav-desktop{
+        display: none;
+    }
+    .sectionNosotros{
+        flex-direction: column;
+    }
     footer .container-1300 .columnFooter:first-child img, footer .container-1300 .columnFooter:first-child div {
         padding-left: 0;
     }
@@ -1390,7 +1662,53 @@ footer .listRedes img{
     .paralelogramDivBanner .mayorText{
         width: 320px;
     }
-    
+    .sectionNosotros div:first-child img{
+        width: 320px;
+        margin: 0 auto;
+        display: block;
+    }
+    .sectionNosotros div:nth-child(2){
+        padding: 0 40px 0 40px;
+    }
+ 
+    .sectionMedia .divTextoMedia > div{
+        max-width: 700px;
+    }
+    .form-section-header{
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+    .collapsible-body [type="radio"]:checked + span,
+    .collapsible-body [type="radio"]:not(:checked) + span{
+        font-size: 16px;
+    }
+    .container-inquietud-formulario .btn{
+        font-size: 13px;
+        width: 109px;
+    }
+    .collapsible-body label {
+        font-size: 16px;
+    }
+    .collapsible-body input[type="text"] {
+        font-size: 16px;
+    }
+    .titleSection.inquietud {
+        font-size: 28px;
+    }
+    .container-inquietud-formulario .flex-collapsible > div{
+        padding-bottom: 20px;
+    }
+    .flex-collapsible {
+        padding-bottom: 100px;
+    }
+    .form-section-header {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+    .sidenav-trigger{
+        display: inline-block;
+    }
+
 }
 @media(max-width:860px){
     .ubicanos .cuadroUbicanos{
@@ -1404,9 +1722,63 @@ footer .listRedes img{
         background-position-y: 110%;
         background-size: 1361px;
     }
+    .botonesFilter a,
+    .botonesFilter a.active{
+        font-size: 10px;
+    }
+    .botonesFilter a{
+        padding: 5px 5px;
+        width: 182px;
+        margin: 10px 10px; 
+    }
+    .botonesFilter a:first-child {
+        margin-left: inherit;
+    }
     
     
 }
+@media(max-width:780px){
+    .modal.video iframe {
+        width: 300px;
+        height: 180px;
+    }
+    .modal.video {
+        width: 300px;
+    }
+    .sectionMedia .divTextoMedia > div{
+        max-width: 600px;
+    }
+    .sectionMedia.servicios .divTextoMedia ul.greenLi{
+        margin-bottom: 0px;
+    }
+    .slider-sectionpage .slider-nav img {
+        width: 125px;
+        height: 50px;
+    }
+    .slider-sectionpage .slider-nav{
+        bottom: 120px;
+    }
+    .sectionMedia.servicios .subtitle.subtitlegreen {
+        font-size: 18px;
+    }
+    .sectionMedia .subtitle.plus, .sectionMedia .subtitle.plus2{
+        font-size: 20px;
+    }
+    .sectionMedia.servicios .subtitle{
+        min-width: 220px;
+    }
+    .videomodal::after{
+        width: 50px;
+        height: 50px;
+        margin-top: -25px;
+        margin-left: -25px;
+        background-size: 50px;
+    }
+    .divInquietud .title-inquietud{
+        font-size: 26px;
+    }
+}
+
 @media(max-width:740px){
     footer .container-1300{
         flex-direction: column;
@@ -1417,6 +1789,23 @@ footer .listRedes img{
     .cuadritoItems{
         width: 50%;
     }
+    .tab-content{
+        padding: 20px 0px 20px 52px;
+        text-align: left;
+        background-size: 36px;
+    }
+    .tab-button,
+    .buttonWhite{
+        font-size: 16px;
+        margin-left: 15px;
+    }
+    .titleNosotros span:nth-child(2){
+        font-size: 30px;
+    }
+    .sectionNosotros div:nth-child(2){
+        padding: 0 20px 0 20px;
+    }
+
 }
 @media(max-width:620px){
     .contfullblue .divDatos {
@@ -1474,7 +1863,34 @@ footer .listRedes img{
         padding-bottom: 20px;
         padding-top: 30px;
     }
+    .sectionMedia.servicios .divTextoMedia .contButtons{
+        flex-direction: column;
+        align-items: center;
+    }
+    .sectionMedia.servicios .divTextoMedia .contButtons .buttonWhite:last-child{
+        margin-top: 20px;
+    }
+    .slider-sectionpage .slider-nav img{
+        width: 70px;
+        height: 30px;
+    }
+    .slider-sectionpage .slider-nav {
+        bottom: 98px;
+    }
+    .slider-sectionpage .slick-dots, .slider-sectionpage ul:not(.browser-default) {
+        bottom: -33px !important;    
+    }
+    .slider-sectionpage .slider-for::after{
+        border-top: 304px solid var(--blanco);
+        border-right: 50px solid transparent;
+    }
+   
     
+}
+@media(max-width:505px){
+    .flex-collapsible.inforelacion{
+        padding-bottom: 150px;
+    }
 }
 @media(max-width:440px){
 
@@ -1483,6 +1899,14 @@ footer .listRedes img{
         background-position-x: 80%;
         background-position-y: 100%;
         background-size: 1481px;
+    }
+    .slider-sectionpage .slider-nav img{
+        width: 40px;
+    }
+    .botonesFilter a {
+        padding: 5px 5px;
+        width: 261px;
+        margin: 5px 0px;
     }
     
 }
@@ -1499,14 +1923,44 @@ footer .listRedes img{
     footer .container-1300 .columnFooter:first-child img{
         width: 100%;
     }
+    footer .listRedes li {
+        padding: 0 12px;
+    }
+    .container-inquietud-formulario .collapsible-body label {
+        font-size: 14px;
+    }
+}
+@media(max-width:373px){
+    .flex-collapsible.inforelacion{
+        padding-bottom: 200px;
+    }
     
-
+}
+@media(max-width:352px){
+    .flex-collapsible.inforelacion{
+        padding-bottom: 250px;
+    }
+    
+}
+@media(max-width:349px){
+    .flex-collapsible.inforelacion{
+        padding-bottom: 300px;
+    }
+    .form-section-header{
+        font-size: 12px;
+    }
 }
 @media(max-width:340px){
+    .form-section-header{
+        font-size: 11px;
+    }
     .contfullblue span.boldDatos {
         font-size: 30px;
     }
     .contfullblue span {
         font-size: 20px;
+    }
+    .container-inquietud-formulario .collapsible-body label {
+        font-size: 12px;
     }
 }

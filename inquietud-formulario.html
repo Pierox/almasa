@@ -7,6 +7,7 @@
     <title>Document</title>
     
     <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="materialize/css/materialize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -44,10 +45,8 @@
                 </li>
                 <li class="liNav">
                     <div class="hoverlink">
-                        <a href="#">
-                            <span>Servicios</span>
-                            <img class="arrowDown" src="img/arrowDownIco.png" alt="arrowDown">
-                        </a>
+                        <span>Servicios</span>
+                        <img class="arrowDown" src="img/arrowDownIco.png" alt="arrowDown">
                     </div>    
                     <ul class="submenu">
                         <li><a href="#">lorem ipsum</a></li>
@@ -103,13 +102,13 @@
                             <span>cos</span>
                             <img class="arrowDown" src="img/arrowDownIco.png" alt="arrowDown">
                         </a>
-                        <ul class="submenu">
-                            <li><a href="#">lorem ipsum</a></li>
-                            <li><a href="#">Excavaciones Profundas con Muros de Contencion</a></li>
-                            <li><a href="#">Pavimentaciones</a></li>
-                            <li><a href="#">Infraestructura Vial Urbana e Interurbana</a></li>
-                        </ul>
                     </div>  
+                    <ul class="submenu">
+                        <li><a href="#">lorem ipsum</a></li>
+                        <li><a href="#">Excavaciones Profundas con Muros de Contencion</a></li>
+                        <li><a href="#">Pavimentaciones</a></li>
+                        <li><a href="#">Infraestructura Vial Urbana e Interurbana</a></li>
+                    </ul>
                 </li>
                 <li class="liNav">
                     <div class="hoverlink">
@@ -121,11 +120,96 @@
                 
             </ul>
         </nav>
+        <a href="#" class="sidenav-trigger" data-target="mobile-links">
+            <i class="material-icons">menu</i>
+          </a>
     </header>
     
+   
+      <ul class="sidenav collapsible" id="mobile-links">
+        <li>
+            <img src="img/logo-header.png" alt="" style="width: 220px;">
+        </li>
+        <li><a href="#">SIG</a></li>
+        <li><a href="#">CANAL ÉtICO</a></li>
+        <li><a href="">Novedades</a></li>
+        <li><a href="">noSOTROS</a></li>
+        <li>
+            <div class="collapsible-header">
+                <span>servicios</span>
+                <i class="toggle-icon">+</i>
+            </div>
+            <div class="collapsible-body">
+                <a href="#">
+                    opcion 1
+                </a>
+                <a href="#">
+                    opcion 2
+                </a>
+                <a href="#">
+                    opcion 3
+                </a>
+            </div>
+        </li>
+        <li>
+            <div class="collapsible-header">
+                <span>Equipos</span>
+                <i class="toggle-icon">+</i>
+            </div>
+            <div class="collapsible-body">
+                <a href="#">
+                    opcion 1
+                </a>
+                <a href="#">
+                    opcion 2
+                </a>
+                <a href="#">
+                    opcion 3
+                </a>
+            </div>
+        </li>
+        <li><a href="">cLIENTES</a></li>
+        <li>
+            <div class="collapsible-header">
+                <span>obras</span>
+                <i class="toggle-icon">+</i>
+            </div>
+            <div class="collapsible-body">
+                <a href="#">
+                    opcion 1
+                </a>
+                <a href="#">
+                    opcion 2
+                </a>
+                <a href="#">
+                    opcion 3
+                </a>
+            </div>
+        </li>
+        <li>
+            <div class="collapsible-header">
+                <span>cos</span>
+                <i class="toggle-icon">+</i>
+            </div>
+            <div class="collapsible-body">
+                <a href="#">
+                    opcion 1
+                </a>
+                <a href="#">
+                    opcion 2
+                </a>
+                <a href="#">
+                    opcion 3
+                </a>
+            </div>
+        </li>
+        <li><a href="">CONTACTANOS</a></li>
+      </ul>
+      
+
 
     <main>
-        <section class="full-container" style="margin-bottom: 0px;margin-top: 40px;">
+        <section class="full-container" style="margin-bottom: 0px;">
       
             <h1 class="titleSection inquietud">Formulario para registro de inquietudes</h1>
             
@@ -175,7 +259,7 @@
                                 ¿CUÁL ES SU RELACIÓN CON ALMASA S.R.L.?
                                 <i class="toggle-icon">+</i>
                             </div>
-                            <div class="collapsible-body flex-collapsible form-section-content">
+                            <div class="collapsible-body flex-collapsible form-section-content inforelacion">
                                 <div><label><input class="with-gap" type="radio" name="relacion" value="cliente"><span>Cliente</span></label></div>
                                 <div><label><input class="with-gap" type="radio" name="relacion" value="empleado"><span>Empleado</span></label></div>
                                 <div><label><input class="with-gap" type="radio" name="relacion" value="obrero"><span>Obrero</span></label></div>
@@ -264,7 +348,7 @@
                     <p class="text-center">Por favor espere un momento hasta recibir el mensaje de confirmación y el código de denuncia
                         para que su comunicación quede correctamente registrada.</p>
                         <br><br>
-                    </form>
+                </form>
             </div>
         </section>
        
@@ -341,23 +425,136 @@
             </div>
         </div>
     </footer>
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="materialize/js/materialize.js"></script>
-    <script src="js/formulario.js"></script>
+    <!-- <script src="js/generales.js"></script> -->
     <script>
         $(document).ready(function(){
-        $('.collapsible').collapsible();
-
-        // Alternar icono y color de fondo al expandir/colapsar
-        $('.collapsible-header').click(function() {
-            var header = $(this);
-            var icon = header.find('.toggle-icon');
-            
-            header.toggleClass('active'); // Cambia el color de fondo
-            icon.text(icon.text() === '+' ? '-' : '+'); // Alterna el símbolo
+        $('.sidenav').sidenav();
         });
-    });
+        $(document).ready(function() {
+            $('.collapsible').collapsible();
+    
+            // Alternar ícono y color de fondo al expandir/colapsar
+            $('.collapsible-header').click(function() {
+                const header = $(this);
+                const icon = header.find('.toggle-icon');
+                
+                if (header.hasClass('active')) {
+                    header.removeClass('active'); // Remueve la clase 'active' si ya está activa
+                    icon.text('+'); // Cambia el ícono a '+'
+                    header.next('.collapsible-body').slideUp(); // Colapsa el cuerpo de la sección
+                } else {
+                    $('.collapsible-header').removeClass('active'); // Quita 'active' de los demás encabezados
+                    $('.collapsible-header').find('.toggle-icon').text('+'); // Cambia todos los íconos a '+'
+                    $('.collapsible-body').slideUp(); // Colapsa todas las secciones abiertas
+                    
+                    header.addClass('active'); // Añade 'active' al encabezado actual
+                    icon.text('-'); // Cambia el ícono a '-'
+                    header.next('.collapsible-body').slideDown(); // Despliega el cuerpo de la sección actual
+                }
+            });
+            // Validación de formulario al hacer clic en "Enviar"
+            $('#formInquietud').submit(function(event) {
+                event.preventDefault();
+                let valid = true;
+    
+                // Función para mostrar y enfocar el primer campo inválido
+                function showAndFocusInvalidSection(header, body, input) {
+                    header.addClass('active'); // Activa el encabezado
+                    header.find('.toggle-icon').text('-'); // Cambia el icono a '-'
+                    body.css('display', 'block'); // Forza la visibilidad de la sección
+                    input.focus(); // Enfoca el campo que falta
+                    $('html, body').animate({ scrollTop: header.offset().top }, 500); // Desplaza hacia la sección
+                }
+    
+                // Verificación de cada campo requerido
+                // Campo de Reporte Anónimo
+                const reporteAnonimo = $('input[name="reporteAnonimo"]:checked');
+                if (reporteAnonimo.length === 0) {
+                    valid = false;
+                    showAndFocusInvalidSection(
+                        $('div:contains("REPORTE ANÓNIMO")'),
+                        $('div:contains("REPORTE ANÓNIMO")').next('.collapsible-body'),
+                        reporteAnonimo
+                    );
+                }
+    
+                // Campo de Datos de quién reporta
+                const datosReporta = $('#datosReporta');
+                if (datosReporta.val().trim() === '') {
+                    valid = false;
+                    showAndFocusInvalidSection(
+                        $('div:contains("DATOS DE QUIÉN REPORTA")'),
+                        $('div:contains("DATOS DE QUIÉN REPORTA")').next('.collapsible-body'),
+                        datosReporta
+                    );
+                }
+    
+                // Campo de Relación con ALMASA S.R.L.
+                const relacion = $('input[name="relacion"]:checked');
+                if (relacion.length === 0) {
+                    valid = false;
+                    showAndFocusInvalidSection(
+                        $('div:contains("¿CUÁL ES SU RELACIÓN CON ALMASA S.R.L.?")'),
+                        $('div:contains("¿CUÁL ES SU RELACIÓN CON ALMASA S.R.L.?")').next('.collapsible-body'),
+                        relacion
+                    );
+                }
+    
+                // Campo de Responsables
+                const responsables = $('#responsables');
+                if (responsables.val().trim() === '') {
+                    valid = false;
+                    showAndFocusInvalidSection(
+                        $('div:contains("¿QUIÉN ES EL (LOS) RESPONSABLE(S)/INVOLUCRADO(S)?")'),
+                        $('div:contains("¿QUIÉN ES EL (LOS) RESPONSABLE(S)/INVOLUCRADO(S)?")').next('.collapsible-body'),
+                        responsables
+                    );
+                }
+    
+                // Campo de Cargos
+                const cargos = $('#cargos');
+                if (cargos.val().trim() === '') {
+                    valid = false;
+                    showAndFocusInvalidSection(
+                        $('div:contains("¿CUÁLES SON SUS CARGOS O POSICIONES?")'),
+                        $('div:contains("¿CUÁLES SON SUS CARGOS O POSICIONES?")').next('.collapsible-body'),
+                        cargos
+                    );
+                }
+    
+                // Campo de Descripción de los hechos
+                const descripcionHechos = $('#descripcionHechos');
+                if (descripcionHechos.val().trim() === '') {
+                    valid = false;
+                    showAndFocusInvalidSection(
+                        $('div:contains("DESCRIPCIÓN DE LOS HECHOS ¿QUÉ HIZO, QUÉ SUCEDIÓ?")'),
+                        $('div:contains("DESCRIPCIÓN DE LOS HECHOS ¿QUÉ HIZO, QUÉ SUCEDIÓ?")').next('.collapsible-body'),
+                        descripcionHechos
+                    );
+                }
+    
+                // Campo de Lugar y Fecha
+                const lugarFecha = $('#lugarFecha');
+                if (lugarFecha.val().trim() === '') {
+                    valid = false;
+                    showAndFocusInvalidSection(
+                        $('div:contains("LUGAR Y FECHA DÓNDE OCURRIERON LOS HECHOS")'),
+                        $('div:contains("LUGAR Y FECHA DÓNDE OCURRIERON LOS HECHOS")').next('.collapsible-body'),
+                        lugarFecha
+                    );
+                }
+    
+                // Si todos los campos son válidos, se envía el formulario
+                if (valid) {
+                    alert("Formulario enviado correctamente.");
+                    this.submit(); // Permite el envío
+                } else {
+                    alert("Por favor, complete los campos requeridos.");
+                }
+            });
+        });
     </script>
 </body>
 </html>
