@@ -209,13 +209,23 @@
 
 
     <main>
+        <div class="full-container">
+            <br>
+            <div class="sub-fullcontainer">      
+                <a href="/canal-etico-principal.html" class="backA">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+                      </svg> &nbsp;ATRÁS
+                </a>
+            </div>
+        </div>
         <section class="full-container" style="margin-bottom: 0px;">
       
             <h1 class="titleSection inquietud">Formulario para registro de inquietudes</h1>
             
         </section>
         <section class="full-container">
-
+           
             <div class="container-inquietud-formulario">
                 <form action="#" method="post" id="formInquietud">
             
@@ -548,7 +558,7 @@
     
                 // Si todos los campos son válidos, se envía el formulario
                 if (valid) {
-                    alert("Formulario enviado correctamente.");
+                    console.log("Formulario enviado correctamente.");
                     this.submit(); // Permite el envío
                 } else {
                     alert("Por favor, complete los campos requeridos.");
