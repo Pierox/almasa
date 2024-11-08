@@ -33,14 +33,14 @@
 
 .paralelogramDivBanner .minurText{
     font-family: 'saira-medium';
-    font-size: 20px;
+    font-size: 18px;
     color: #FFFFFF;
     margin: 0;
     line-height: 1;
 }
 .paralelogramDivBanner .mayorText{
     font-family: 'saira-bold';
-    font-size: 32px;
+    font-size: 30px;
     width: 320px;
     color: #FFFFFF;
     margin: 0;
@@ -90,7 +90,7 @@ background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(120,120,120,0.485
 /*botones del banner */
 /*********************/
 .paralelogramDivBanner a.buttonBanner{
-    font-size: 17px;
+    font-size: 16px;
     font-family: 'saira-regular';
     text-decoration: none;
     position: relative;

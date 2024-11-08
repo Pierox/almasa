@@ -140,9 +140,9 @@
 
     display: inline-block;
 
-    width: 36px;
+    width: 26px;
     height: 6px;
-    margin: 0 10px;
+    margin: 0 5px;
     padding: 0;
 
     cursor: pointer;
@@ -154,7 +154,7 @@
 
     display: block;
 
-    width: 36px;
+    width: 26px;
     height: 6px;
     /* padding: 5px; */
     cursor: pointer;
@@ -182,7 +182,7 @@
     top: 0;
     background: var(--azul);
     left: 0;
-    width: 36px;
+    width: 26px;
     height: 6px;
     content: '•';
     text-align: center;

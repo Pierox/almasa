@@ -64,7 +64,7 @@ header{
     justify-content: space-between;
 }
 header, header a{
-    font-size: 14px;
+    font-size: 13px;
     color: #FFFFFF;
     text-decoration: none;
     text-transform: uppercase;
@@ -163,17 +163,28 @@ header ul.submenu li:hover a{
 header .liNav:hover .submenu{
     display: block;
 }
+.logo-header{
+    width: 300px;
+}
 p{
-    font-size: 24px;
+    font-size: 22px;
     line-height: 1.5;
     font-family: 'saira-regular';
     color: var(--gris);
+}
+.sub-fullcontainer{
+    position: relative;
+}
+.contbackA{
+    position: absolute;
+    left: 0;
+    top: 20px;
 }
 .backA{
     color: var(--azul);
     text-transform: uppercase;
     font-family: 'saira-medium';
-    font-size: 24px;
+    font-size: 20px;
     display: flex;
 }
 .text-center{
@@ -187,7 +198,7 @@ p{
 }
 
 .full-container{
-    max-width: 1530px;
+    max-width: 1450px;
     width: 100%;
     margin: 0 auto;
 }
@@ -213,15 +224,15 @@ p{
     background-repeat: no-repeat;
 }
 .sectionMedia p{
-    font-size: 24px;
-    line-height: 1.2;
+    font-size: 22px;
+    line-height: 1.5;
     color: var(--gris);
     font-family: 'saira-regular';
     text-align: left;
     margin: 24px 0;
 }
 .sectionMedia .subtitle{
-    font-size: 25px;
+    font-size: 23px;
     line-height: 1.5;
     margin: 0;
     font-family: 'saira-semibold';
@@ -232,7 +243,7 @@ p{
     background-color: var(--azul);
     transform: skew(-15deg);
     color: var(--blanco);
-    font-size: 30px;
+    font-size: 24px;
     display: inline-block;
     line-height: 1.2;
     padding: 8px 20px;
@@ -243,7 +254,7 @@ p{
     border: 2px solid var(--azul);
     transform: skew(-15deg);
     color: var(--azul);
-    font-size: 30px;
+    font-size: 26px;
     display: inline-block;
     padding-left: 20px;
     padding-right: 20px;
@@ -269,7 +280,7 @@ p{
 .sectionMedia .divVideoMedia img{
     position: relative;
     top: -70px;
-    width: 600px;
+    width: 570px;
     z-index: 2;
 }
 .sectionMedia .divVideoMedia > a{
@@ -290,18 +301,18 @@ p{
 }
 .sectionMedia.servicios{
     background: none;
-    margin-bottom: 80px;
+    margin-bottom: 20px;
 }
 .sectionMedia .parrafsection{
     margin: 0;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 1.2;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     text-align: center;
 }
 .sectionMedia.servicios .subtitle{
     padding: 13px 20px;
-    min-width: 400px;
+    min-width: 362px;
     text-align: center;
 }
 .sectionMedia.servicios .divTextoMedia{
@@ -311,7 +322,7 @@ p{
  padding-top: 0;
 }
 .sectionMedia.servicios .contMedia{
-    margin-top: 82px;
+    margin-top: 40px;
 }
 .sectionMedia.servicios .divTextoMedia{
     display: block;
@@ -325,6 +336,9 @@ p{
 }
 .sectionMedia.servicios .contMedia{
     justify-content: space-between;
+    max-width: 1340px;
+    margin: 0 auto;
+    margin-top: 40px;
 }
 .videomodal{
     position: relative;
@@ -343,7 +357,8 @@ p{
 }
 .sectionMedia.servicios.obras .divTextoMedia ul li{
     font-size: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    padding-right: 30px;
 }
 .sectionMedia.servicios.obras .divTextoMedia ul li span{
     display: block;
@@ -362,17 +377,20 @@ p{
     margin: 40px 0;
 }
 .sectionNosotros p{
-    font-size: 25px;
-    line-height: 1.8;
+    font-size: 20px;
+    line-height: 1.6;
     color: var(--gris);
     text-align: justify;
+}
+.sectionNosotros div:first-child img{
+    width: 400px;
 }
 .sectionNosotros p b{
     color: var(--azul);
 }
 .titleNosotros span{
     color: var(--azul);
-    font-size: 30px;
+    font-size: 24px;
     font-family: 'saira-semibold';
     text-transform: uppercase;
     display: block;
@@ -418,15 +436,15 @@ p{
 }
 
 .tab-button {
-    font-size: 20px;
+    font-size: 16px;
     font-family: 'saira-regular';
     text-decoration: none;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 250px;
-    height: 52px;
+    width: 146px;
+    height: 36px;
     color: var(--azul);
     z-index: 1;
     text-transform: uppercase;
@@ -470,7 +488,7 @@ p{
 }
 .tab-content p{
     color: var(--gris);
-    font-size: 25px;
+    font-size: 18px;
     line-height: 1.5;
 }
 .tab-content.active {
@@ -483,20 +501,7 @@ button:focus {
 /*****************/
 /*****************/
 
-.buttonWhite {
-    font-size: 20px;
-    font-family: 'saira-regular';
-    text-decoration: none;
-    position: relative;
-    display: flex;
-    align-items: center;
-    width: 200px;
-    height: 52px;
-    color: var(--azul);
-    z-index: 1;
-    text-transform: uppercase;
-    margin-left: 30px;
-}
+
 
 /********************/
 /********************/
@@ -569,7 +574,7 @@ button:focus {
 }
 .sectionMedia.servicios .divTextoMedia ul li{
     list-style: disc;
-    font-size: 24px;
+    font-size: 18px;
     font-family: 'saira-regular';
     color: var(--gris);
     margin-left: 54px;
@@ -585,8 +590,8 @@ button:focus {
     list-style-image: url(../img/listGreen.png);
     max-width: 720px;
     width: 100%;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-bottom: 0px;
 }
 .sectionMedia.servicios .divTextoMedia ul.greenLi li{
     list-style: none;
@@ -603,14 +608,14 @@ button:focus {
     top: 25px;
 }
 .buttonWhite{
-    font-size: 20px;
+    font-size: 16px;
     font-family: 'saira-regular';
     text-decoration: none;
     position: relative;
     display: flex;
     align-items: center;
-    width: 200px;
-    height: 52px;
+    width: 150px;
+    height: 42px;
     color: var(--azul);
     z-index: 1;
     text-transform: uppercase;
@@ -657,6 +662,7 @@ button:focus {
 .carouselClientes > div img{
     display: block;
     margin: 0 auto;
+    width: 200px;
 }
 .carouselClientes > div{
     padding-bottom: 100px;
@@ -669,7 +675,7 @@ button:focus {
 .titleSection{
     font-family: 'saira-extrabold';
     color: var(--azul);
-    font-size: 56px;
+    font-size: 48px;
     display: table;
     margin: 0 auto;
     position: relative;
@@ -680,17 +686,18 @@ button:focus {
 }
 .titleSection.inquietud{
     font-family: 'saira-semibold';
-    font-size: 41px;
+    font-size: 30px;
 }
 .titleDiv{
     font-family: 'saira-bold';
     color: var(--azul);
-    font-size: 28px;
+    font-size: 26px;
+    margin-top: 8px;
 }
 .subtitle{
     font-family: 'saira-bold';
     color: var(--azul);
-    font-size: 25px;
+    font-size: 22px;
     line-height: 1.5;
 }
 .divWhy{
@@ -703,7 +710,7 @@ button:focus {
 .divWhy p{
     font-family: 'saira-regular';
     color: var(--gris);
-    font-size: 24px;
+    font-size: 22px;
     text-align: left;
     margin: 24px 0;
 }
@@ -740,11 +747,11 @@ button:focus {
 }
 .contfullblue span{
     font-family: 'saira-medium';
-    font-size: 19px;
+    font-size: 16px;
 }
 .contfullblue span.boldDatos{
     font-family: 'saira-bold';
-    font-size: 38px;
+    font-size: 34px;
     display: flex
 }
 .contfullblue .boldDatos span{
@@ -795,7 +802,8 @@ button:focus {
     align-content: space-between;
 }
 .cuadritoCeleste span{
-    font-size: 24px;
+    font-size: 18px;
+    line-height: 1.2;
     font-family: 'saira-medium';
 }
 .cuadritoCeleste div{
@@ -821,7 +829,13 @@ button:focus {
 .cuadritoItems:hover .cuadritoCeleste > div{
     opacity: 1;
 }
-
+.cuadritoCeleste > img{
+    width: 63px;
+    height: 43px;
+}
+.whyIcon{
+    width: 50px;
+}
 
 .filtrado .cuadritoItems {
     display: none;
@@ -830,10 +844,10 @@ button:focus {
 .filtrado .cuadritoItems.active {
     display: block;
 }
-.filtrado .cuadritoItems img{
+/* .filtrado .cuadritoItems img{
     width: calc(100% - 40px);
     margin: 0 auto;
-}
+} */
 .botonesFilter{
     display: flex;
     flex-direction: row;
@@ -845,7 +859,7 @@ button:focus {
     margin-left: 0px;
 }
 .botonesFilter a {
-    font-size: 16px;
+    font-size: 14px;
     font-family: 'saira-regular';
     text-decoration: none;
     position: relative;
@@ -910,8 +924,8 @@ button:focus {
 .container-1634 .divWhy{
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     width: calc(50% - 121px);
 }
 .container-1634.greyline .divWhy{
@@ -990,13 +1004,14 @@ input.invalid, select.invalid {
 }
 .ubicanos .cuadroUbicanos{
     background-color: var(--azul);
-    padding: 34px 50px 30px 50px;
+    padding: 24px 30px 20px 30px;
     color: var(--blanco);
     display: inline-block;
+    width: 336px;
 }
 .ubicanos .cuadroUbicanos .titleUbicanos{
     font-family: 'saira-semibold';
-    font-size: 34px;
+    font-size: 30px;
     padding: 0;
     margin: 0;
     position: relative;
@@ -1015,7 +1030,7 @@ input.invalid, select.invalid {
 }
 .ubicanos .cuadroUbicanos p{
     font-family: 'saira-regular';
-    font-size: 22px;
+    font-size: 16px;
     color: var(--blanco);
     margin-top: 20px;
     text-align: left;
@@ -1026,7 +1041,7 @@ input.invalid, select.invalid {
 }
 .ubicanos .cuadroUbicanos p .subtitle{
     font-family: 'saira-semibold';
-    font-size: 21px;
+    font-size: 18px;
     color: var(--blanco);
     text-transform: uppercase;
 }
@@ -1040,9 +1055,12 @@ input.invalid, select.invalid {
 .graysection{
     background-color: var(--grisMasClaro);
 }
+.columnFooter:first-child img{
+    max-width: 200px;
+}
 .divEtic{
     text-align: center;
-    width: 451px;
+    width: 340px;
 }
 .divEtic img{
     width: 70px;
@@ -1050,7 +1068,7 @@ input.invalid, select.invalid {
 .divEtic span{
     display: block;
     font-family: 'saira-regular';
-    font-size: 24px;
+    font-size: 20px;
 }
 .divEtic span.boldy{
     color: var(--azul);
@@ -1079,7 +1097,7 @@ input.invalid, select.invalid {
 }
 .divInquietud .title-inquietud{
     font-family: 'saira-semibold';
-    font-size: 42px;
+    font-size: 35px;
     color: var(--azul);
 }
 .divInquietud .buttonBlue{
@@ -1137,7 +1155,7 @@ input.invalid, select.invalid {
     align-items: center;
     background-color: var(--blanco);
     font-family: 'saira-medium';
-    font-size: 20px;
+    font-size: 16px;
 }
 .active .form-section-header,
 .form-section-header:hover,
@@ -1165,7 +1183,7 @@ input.invalid, select.invalid {
 }
 .collapsible-body [type="radio"]:not(:checked) + span, .collapsible-body [type="radio"]:checked + span,
 .collapsible-body input[type="text"] {
-    font-size: 20px;
+    font-size: 16px;
 }
 .flex-collapsible{
     padding-bottom: 60px;
@@ -1177,6 +1195,7 @@ input.invalid, select.invalid {
 
  .btn{
     font-size: 20px;
+    line-height: 1.5;
     font-family: 'saira-regular';
     text-decoration: none;
     position: relative;
@@ -1189,6 +1208,11 @@ input.invalid, select.invalid {
     border: none;
     box-shadow: none;
     padding-top: 5px;
+}
+.btn:focus{
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
 }
 
  .btn::before{
@@ -1206,7 +1230,7 @@ input.invalid, select.invalid {
     left: 0;
 }
 #formInquietud p{
-    font-size: 25px;
+    font-size: 22px;
     font-family: 'saira-light';
 }
 /*****************/
@@ -1281,12 +1305,12 @@ footer{
 }
 footer .container-1300 .columnFooter:first-child img,
 footer .container-1300 .columnFooter:first-child div{
-    padding-left: 90px;
+    padding-left: 40px;
 }
 footer a{
     color: #FFFFFF;
-    font-size: 24px;
-    line-height: 42px;
+    font-size: 22px;
+    line-height: 32px;
 }
 .columnFooter{
     padding-top: 60px;
@@ -1308,7 +1332,7 @@ footer .listRedes li{
     padding: 0 20px;
 }
 footer .listRedes img{
-    width: 36px;
+    width: 30px;
 }
 .wp-icon{
     position: fixed;
@@ -1318,6 +1342,8 @@ footer .listRedes img{
 }
 .wp-icon img{
     display: block;
+    width: 60px;
+    height: 60px;
 }
 
 @media(max-width:1800px) {
@@ -1331,9 +1357,6 @@ footer .listRedes img{
     }
     .divEtic img{
         width: 50px;
-    }
-    .divEtic span{
-        font-size: 23px;
     }
 }
 @media(max-width:1660px){
@@ -1363,21 +1386,22 @@ footer .listRedes img{
         margin-left: 20px;
         padding: 34px 20px 30px 20px;
     }
-    .cuadritoCeleste span{
-        font-size: 23px;
-    }
+
     .sectionMedia p, .sectionMedia .parrafsection, 
     .sectionForm p,.divInquietud p,
     .contEticoText p,
     .sectionMedia.servicios.obras .divTextoMedia ul li,
     .sectionMedia.servicios .divTextoMedia ul li, .divWhy p{
-        font-size: 24px;
+        font-size: 18px;
     }
     .sectionMedia .subtitle.plus,
     .sectionMedia .subtitle.plus2{
         font-size: 26px;
         display: block;
         margin: 0 auto;
+    }
+    .sectionMedia .subtitle.plus2{
+        margin-bottom: 24px;
     }
     .sectionMedia.servicios .subtitle{
         min-width: 320px;
@@ -1388,17 +1412,11 @@ footer .listRedes img{
 
 
 @media(max-width:1526px){
-    header, header a{
-        font-size: 14px;
-    }
+
     header ul li .hoverlink{
         width: 129px;
     }
 
-
-    .sectionNosotros div:first-child img{
-        width: 500px;
-    }
     .slider-sectionpage .slider-container{
         width: 700px;
     }
@@ -1453,15 +1471,15 @@ footer .listRedes img{
     .sectionMedia .parrafsection,
     .sectionForm p,
     .divWhy p{
-        font-size: 24px;
+        font-size: 22px;
     }
     .sectionMedia.servicios .divTextoMedia ul li,
     .sectionMedia.servicios.obras .divTextoMedia ul li{
-        font-size: 24px;
+        font-size: 22px;
     }
 
     .sectionMedia.servicios .subtitle.subtitlegreen{
-        font-size: 24px;
+        font-size: 22px;
     }
     .sectionMedia.servicios .subtitle.subtitlegreen::before{
         top: 23px;
@@ -1723,9 +1741,22 @@ footer .listRedes img{
 
 }
 @media(max-width:860px){
+
     .ubicanos .cuadroUbicanos{
         width: 100%;
         margin-left: 0;
+    }
+    .titleSection {
+        font-size: 38px;
+    }
+    .contbackA{
+        display: none;
+    }
+    .titleSection::after {
+        left: 7px;
+        width: 30px;
+        height: 54px;
+        background-size: 30px 54px;
     }
     .ubicanos{
         align-items: flex-start;
