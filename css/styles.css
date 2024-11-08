@@ -40,6 +40,9 @@ ul, ul li{
     list-style: none;
     margin: 0;
 }
+h1{
+    line-height: 1.5;
+}
 a{
     font-style: normal;
     text-decoration: none;
@@ -61,7 +64,7 @@ header{
     justify-content: space-between;
 }
 header, header a{
-    font-size: 18px;
+    font-size: 14px;
     color: #FFFFFF;
     text-decoration: none;
     text-transform: uppercase;
@@ -161,7 +164,7 @@ header .liNav:hover .submenu{
     display: block;
 }
 p{
-    font-size: 33px;
+    font-size: 24px;
     line-height: 1.5;
     font-family: 'saira-regular';
     color: var(--gris);
@@ -184,7 +187,7 @@ p{
 }
 
 .full-container{
-    max-width: 1800px;
+    max-width: 1530px;
     width: 100%;
     margin: 0 auto;
 }
@@ -210,7 +213,7 @@ p{
     background-repeat: no-repeat;
 }
 .sectionMedia p{
-    font-size: 33px;
+    font-size: 24px;
     line-height: 1.2;
     color: var(--gris);
     font-family: 'saira-regular';
@@ -218,7 +221,8 @@ p{
     margin: 24px 0;
 }
 .sectionMedia .subtitle{
-    font-size: 33px;
+    font-size: 25px;
+    line-height: 1.5;
     margin: 0;
     font-family: 'saira-semibold';
     text-transform: uppercase;
@@ -228,11 +232,10 @@ p{
     background-color: var(--azul);
     transform: skew(-15deg);
     color: var(--blanco);
-    font-size: 38px;
+    font-size: 30px;
     display: inline-block;
-    padding-left: 20px;
-    padding-right: 20px;
     line-height: 1.2;
+    padding: 8px 20px;
 }
 .sectionMedia .subtitle.plus2{
     font-family: 'saira-bold';
@@ -240,7 +243,7 @@ p{
     border: 2px solid var(--azul);
     transform: skew(-15deg);
     color: var(--azul);
-    font-size: 38px;
+    font-size: 30px;
     display: inline-block;
     padding-left: 20px;
     padding-right: 20px;
@@ -259,13 +262,14 @@ p{
     align-items: center;
 }
 .sectionMedia .divTextoMedia > div{
-    width: calc(100% - 160px);
+    /* width: calc(100% - 160px); */
     margin: 0 auto;
     padding: 40px 0;
 }
 .sectionMedia .divVideoMedia img{
     position: relative;
     top: -70px;
+    width: 600px;
     z-index: 2;
 }
 .sectionMedia .divVideoMedia > a{
@@ -290,14 +294,14 @@ p{
 }
 .sectionMedia .parrafsection{
     margin: 0;
-    font-size: 33px;
+    font-size: 24px;
     line-height: 1.2;
     margin-bottom: 40px;
     text-align: center;
 }
 .sectionMedia.servicios .subtitle{
     padding: 13px 20px;
-    min-width: 572px;
+    min-width: 400px;
     text-align: center;
 }
 .sectionMedia.servicios .divTextoMedia{
@@ -338,7 +342,7 @@ p{
     z-index: 3;
 }
 .sectionMedia.servicios.obras .divTextoMedia ul li{
-    font-size: 29px;
+    font-size: 20px;
     margin-bottom: 20px;
 }
 .sectionMedia.servicios.obras .divTextoMedia ul li span{
@@ -358,8 +362,8 @@ p{
     margin: 40px 0;
 }
 .sectionNosotros p{
-    font-size: 30px;
-    line-height: 46px;
+    font-size: 25px;
+    line-height: 1.8;
     color: var(--gris);
     text-align: justify;
 }
@@ -368,7 +372,7 @@ p{
 }
 .titleNosotros span{
     color: var(--azul);
-    font-size: 42px;
+    font-size: 30px;
     font-family: 'saira-semibold';
     text-transform: uppercase;
     display: block;
@@ -378,7 +382,7 @@ p{
     color: var(--blanco);
     position: relative;
     z-index: 1;
-    font-size: 56px;
+    font-size: 42px;
     font-family: 'saira-bold';
     padding: 10px 5px;
 }
@@ -466,8 +470,8 @@ p{
 }
 .tab-content p{
     color: var(--gris);
-    font-size: 33px;
-    line-height: 1.2;
+    font-size: 25px;
+    line-height: 1.5;
 }
 .tab-content.active {
     display: block;
@@ -497,7 +501,7 @@ button:focus {
 /********************/
 /********************/
 .slider-sectionpage .slider-container {
-    width: 920px;
+    width: 800px;
     margin: 0 auto;
 }
 
@@ -565,7 +569,7 @@ button:focus {
 }
 .sectionMedia.servicios .divTextoMedia ul li{
     list-style: disc;
-    font-size: 33px;
+    font-size: 24px;
     font-family: 'saira-regular';
     color: var(--gris);
     margin-left: 54px;
@@ -596,7 +600,7 @@ button:focus {
     background-color: var(--verde);
     position: absolute;
     left: 0;
-    top: 32px;
+    top: 25px;
 }
 .buttonWhite{
     font-size: 20px;
@@ -665,7 +669,7 @@ button:focus {
 .titleSection{
     font-family: 'saira-extrabold';
     color: var(--azul);
-    font-size: 66px;
+    font-size: 56px;
     display: table;
     margin: 0 auto;
     position: relative;
@@ -681,7 +685,7 @@ button:focus {
 .titleDiv{
     font-family: 'saira-bold';
     color: var(--azul);
-    font-size: 34px;
+    font-size: 28px;
 }
 .subtitle{
     font-family: 'saira-bold';
@@ -699,7 +703,7 @@ button:focus {
 .divWhy p{
     font-family: 'saira-regular';
     color: var(--gris);
-    font-size: 30px;
+    font-size: 24px;
     text-align: left;
     margin: 24px 0;
 }
@@ -736,11 +740,11 @@ button:focus {
 }
 .contfullblue span{
     font-family: 'saira-medium';
-    font-size: 23px;
+    font-size: 19px;
 }
 .contfullblue span.boldDatos{
     font-family: 'saira-bold';
-    font-size: 45px;
+    font-size: 38px;
     display: flex
 }
 .contfullblue .boldDatos span{
@@ -791,7 +795,7 @@ button:focus {
     align-content: space-between;
 }
 .cuadritoCeleste span{
-    font-size: 33px;
+    font-size: 24px;
     font-family: 'saira-medium';
 }
 .cuadritoCeleste div{
@@ -841,7 +845,7 @@ button:focus {
     margin-left: 0px;
 }
 .botonesFilter a {
-    font-size: 20px;
+    font-size: 16px;
     font-family: 'saira-regular';
     text-decoration: none;
     position: relative;
@@ -849,7 +853,7 @@ button:focus {
     align-items: center;
     justify-content: center;
     padding: 10px 20px;
-    width: 262px;
+    width: 198px;
     color: var(--azul);
     z-index: 1;
     text-transform: uppercase;
@@ -859,7 +863,6 @@ button:focus {
     margin-bottom: 24px;
 }
 .botonesFilter a.active {
-    font-size: 20px;
     font-family: 'saira-semibold';
     text-decoration: none;
     position: relative;
@@ -905,10 +908,10 @@ button:focus {
     justify-content: center;
 }
 .container-1634 .divWhy{
-    padding-left: 60px;
-    padding-right: 60px;
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     width: calc(50% - 121px);
 }
 .container-1634.greyline .divWhy{
@@ -993,7 +996,7 @@ input.invalid, select.invalid {
 }
 .ubicanos .cuadroUbicanos .titleUbicanos{
     font-family: 'saira-semibold';
-    font-size: 40px;
+    font-size: 34px;
     padding: 0;
     margin: 0;
     position: relative;
@@ -1012,7 +1015,7 @@ input.invalid, select.invalid {
 }
 .ubicanos .cuadroUbicanos p{
     font-family: 'saira-regular';
-    font-size: 27px;
+    font-size: 22px;
     color: var(--blanco);
     margin-top: 20px;
     text-align: left;
@@ -1023,7 +1026,7 @@ input.invalid, select.invalid {
 }
 .ubicanos .cuadroUbicanos p .subtitle{
     font-family: 'saira-semibold';
-    font-size: 25px;
+    font-size: 21px;
     color: var(--blanco);
     text-transform: uppercase;
 }
@@ -1042,12 +1045,12 @@ input.invalid, select.invalid {
     width: 451px;
 }
 .divEtic img{
-    width: 98px;
+    width: 70px;
 }
 .divEtic span{
     display: block;
     font-family: 'saira-regular';
-    font-size: 33px;
+    font-size: 24px;
 }
 .divEtic span.boldy{
     color: var(--azul);
@@ -1069,7 +1072,7 @@ input.invalid, select.invalid {
     text-align: center;
 }
 .divInquietud p{
-    font-size: 25px;
+    font-size: 24px;
     color: var(--gris);
     line-height: 1.5;
     text-align: center;
@@ -1282,8 +1285,8 @@ footer .container-1300 .columnFooter:first-child div{
 }
 footer a{
     color: #FFFFFF;
-    font-size: 33px;
-    line-height: 52px;
+    font-size: 24px;
+    line-height: 42px;
 }
 .columnFooter{
     padding-top: 60px;
@@ -1307,12 +1310,16 @@ footer .listRedes li{
 footer .listRedes img{
     width: 36px;
 }
-
-@media(max-width:2000px){
-    .paralelogramDivBanner{
-       left: 410px;
-    }
+.wp-icon{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 4;
 }
+.wp-icon img{
+    display: block;
+}
+
 @media(max-width:1800px) {
     .sectionMedia .parrafsection,
     .sectionForm p{
@@ -1323,7 +1330,7 @@ footer .listRedes img{
         width: 400px;
     }
     .divEtic img{
-        width: 70px;
+        width: 50px;
     }
     .divEtic span{
         font-size: 23px;
@@ -1364,11 +1371,11 @@ footer .listRedes img{
     .contEticoText p,
     .sectionMedia.servicios.obras .divTextoMedia ul li,
     .sectionMedia.servicios .divTextoMedia ul li, .divWhy p{
-        font-size: 28px;
+        font-size: 24px;
     }
     .sectionMedia .subtitle.plus,
     .sectionMedia .subtitle.plus2{
-        font-size: 32px;
+        font-size: 26px;
         display: block;
         margin: 0 auto;
     }
@@ -1387,29 +1394,8 @@ footer .listRedes img{
     header ul li .hoverlink{
         width: 129px;
     }
-    .paralelogramDivBanner .mayorText{
-        font-size: 40px;
-    }
-    .paralelogramDivBanner .minurText{
-        font-size: 26px;
-    }
-    
-    .paralelogramDivBanner .mayorText {
-        font-size: 36px;
-    }
-    .paralelogramDivBanner > div{
-        padding: 44px 40px;
-    }
-    .paralelogramDivBanner .mayorText{
-        width: 420px;
-    }
-    .titleNosotros span:nth-child(2){
-        font-size: 46px;
-    }
-    .titleNosotros span{
-        font-size: 32px;
-        line-height: 1.5;
-    }
+
+
     .sectionNosotros div:first-child img{
         width: 500px;
     }
@@ -1424,8 +1410,24 @@ footer .listRedes img{
         position: relative;
         bottom: 142px;
     }
+
 }
 @media(max-width:1386px){
+    .tab-button{
+        font-size: 16px;
+        height: 42px;
+        width: 180px;
+    }
+    .tab-content p{
+        font-size: 20px;
+    }
+    .titleNosotros span{
+        font-size: 24px;
+    }
+    .titleNosotros span:nth-child(2){
+        font-size: 34px;
+        padding: 5px 5px;
+    }
     .contfullblue span{
         font-size: 20px;
     }
@@ -1451,16 +1453,13 @@ footer .listRedes img{
     .sectionMedia .parrafsection,
     .sectionForm p,
     .divWhy p{
-        font-size: 28px;
+        font-size: 24px;
     }
     .sectionMedia.servicios .divTextoMedia ul li,
     .sectionMedia.servicios.obras .divTextoMedia ul li{
         font-size: 24px;
     }
-    .sectionMedia .subtitle.plus, .sectionMedia .subtitle.plus2{
-        font-size: 28px;
-        line-height: 1.2;
-    }
+
     .sectionMedia.servicios .subtitle.subtitlegreen{
         font-size: 24px;
     }
@@ -1471,7 +1470,7 @@ footer .listRedes img{
         width: 300px;
     }
     .divEtic img{
-        width: 60px;
+        width: 40px;
     }
     .divEtic span{
         font-size: 20px;
@@ -1489,9 +1488,12 @@ footer .listRedes img{
     .logo-header{
         width: 240px;
     }
-    
+    .sectionNosotros p{
+        font-size: 20px;
+    }
 }
 @media(max-width:1200px){
+ 
     .modal.video iframe {
         width: 590px;
         height: 350px;
@@ -1505,7 +1507,7 @@ footer .listRedes img{
     .ubicanos .cuadroUbicanos p,
     .tab-content p,
     .sectionNosotros p{
-        font-size: 24px;
+        font-size: 18px;
     }
     .sectionNosotros p{
         line-height: 1.5;
@@ -1521,16 +1523,13 @@ footer .listRedes img{
         font-size: 28px;
         line-height: 1.5;
     }
-    .sectionNosotros div:first-child img{
-        width: 600px;
-    }
-    .titleNosotros span:nth-child(2){
-        font-size: 36px;
-    }
     .titleNosotros span{
-        font-size: 22px;
+        font-size: 18px;
     }
 }
+    .titleNosotros span:nth-child(2){
+        font-size: 24px;
+    }
 @media(max-width:1140px){
     .sectionForm{
         padding: 0 20px;
@@ -1604,7 +1603,7 @@ footer .listRedes img{
     .sectionMedia .subtitle,
     .sectionMedia .subtitle.plus,
     .titleDiv {
-        font-size: 28px;
+        font-size: 24px;
     }
     .ubicanos .cuadroUbicanos p,
     .tab-content p,
@@ -1624,16 +1623,23 @@ footer .listRedes img{
         width: calc(100% - 40px);
     }
     .container-1634 .divWhy{
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
         padding-top: 30px;
         padding-bottom: 30px;
         width: calc(50% - 80px);
     }
-
+    .contfullblue{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
     
 }
 @media(max-width:990px){
+    .wp-icon img{
+        width: 50px;
+        height: 50px;
+    }
     .nav-desktop{
         display: none;
     }
@@ -1650,24 +1656,23 @@ footer .listRedes img{
         width: 100%;
     }
     .paralelogramDivBanner {
-        left: 310px;
-        top: 77%;
+        left: 60px;
     }
     .paralelogramDivBanner .mayorText {
-        font-size: 30px;
+        font-size: 20px;
     }
     .paralelogramDivBanner .minurText{
-        font-size: 18px;
+        font-size: 14px;
     }
     .paralelogramDivBanner a.buttonBanner{
-        font-size: 16px;
+        font-size: 14px;
         width: 130px;
     }
     .paralelogramDivBanner > div{
         padding: 20px 30px;
     }
     .paralelogramDivBanner .mayorText{
-        width: 320px;
+        width: 272px;
     }
     .sectionNosotros div:first-child img{
         width: 320px;
@@ -1806,9 +1811,6 @@ footer .listRedes img{
         font-size: 16px;
         margin-left: 15px;
     }
-    .titleNosotros span:nth-child(2){
-        font-size: 30px;
-    }
     .sectionNosotros div:nth-child(2){
         padding: 0 20px 0 20px;
     }
@@ -1843,14 +1845,16 @@ footer .listRedes img{
         display: none;
     }
     .paralelogramDivBanner {
-        left: 200px;
-        top: 77%;
+        left: 50px;
     }
     .paralelogramDivBanner .mayorText {
         width: auto;
     }
     .paralelogramDivBanner .mayorText {
-        font-size: 24px;
+        font-size: 18px;
+    }
+    .paralelogramDivBanner .minurText{
+        font-size: 14px;
     }
     .paralelogramDivBanner > div {
         padding: 20px 30px;
@@ -1898,9 +1902,21 @@ footer .listRedes img{
     .flex-collapsible.inforelacion{
         padding-bottom: 150px;
     }
+    .contfullblue span.boldDatos{
+        font-size: 25px;
+    }
+    .contfullblue span {
+        font-size: 15px;
+    }
+
 }
 @media(max-width:440px){
-
+    .titleSection{
+        font-size: 26px;
+    }
+    .paralelogramDivBanner .mayorText {
+        width: 160px;
+    }
     .ubicanos{
         height: 749px;
         background-position-x: 80%;
@@ -1936,6 +1952,7 @@ footer .listRedes img{
     .container-inquietud-formulario .collapsible-body label {
         font-size: 14px;
     }
+   
 }
 @media(max-width:373px){
     .flex-collapsible.inforelacion{
